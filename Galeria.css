@@ -684,26 +684,3 @@
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
-
-opis-galerii {
-    /* Centrowanie zawartości */
-    text-align: center; 
-    /* Odsunięcie od góry i dołu galerii */
-    padding-top: 50px; 
-    padding-bottom: 20px;
-    /* Upewnij się, że tekst ma marginesy po bokach, aby nie dotykał krawędzi */
-    padding-left: 15px; 
-    padding-right: 15px;
-}
-
-.opis-galerii h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Zmniejszenie rozmiaru nagłówka na telefonach */
-@media (max-width: 600px) {
-    .opis-galerii h2 {
-        font-size: 1.5em;
-    }
-}
