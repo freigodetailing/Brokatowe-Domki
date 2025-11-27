@@ -787,6 +787,30 @@ borders: top right bottom left !important
   margin: auto;
   font-family: 'fubuntu', sans-serif;
   font-size: 14px;
+
+	
+/* Kontener telefonu */
+.phone-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+/* Select kierunkowy */
+.phone-row select {
+  width: 140px;
+	 border-radius: 4px;
+  padding: 10px;
+  background: #fff;
+  cursor: pointer;
+	 margin-top: 4px; /* niewielki odstęp od label */
+	 border: 1px solid #ccc;
+}
+
+/* Pole numeru */
+.phone-row input {
+  flex: 1;
 }
 /* Reset marginesów/paddingów */
 .custom-form * {
