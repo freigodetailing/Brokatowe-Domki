@@ -3656,33 +3656,35 @@
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
 
-.phone-wrapper {
+.phone-group {
   display: flex;
-  align-items: center;
-  gap: 6px;
+  gap: 10px;
   width: 100%;
 }
 
-.phone-wrapper select {
-  width: 35%;
+.phone-group select {
+  width: 110px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 4px;
   background: #fff;
   font-size: 14px;
 }
 
-.phone-wrapper input {
+.phone-group input {
   flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
+  border-radius: 4px;
 }
 
-/* Efekt hover i focus dopasowany do reszty formularza */
-.phone-wrapper select:focus,
-.phone-wrapper input:focus {
-  border-color: #4fa3ff;
-  outline: none;
+/* Responsywność na telefony */
+@media(max-width: 480px) {
+  .phone-group {
+    flex-direction: row;
+  }
+
+  .phone-group select {
+    width: 90px;
+  }
 }
