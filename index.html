@@ -721,9 +721,9 @@ Proszę podać daty przyjazdu i wyjazdu, liczbę osób oraz ewentualne pytania l
                       <input type="text" id="name" name="Imię i Nazwisko" required="" placeholder="Wpisz dane">
                       <label for="email">Email*</label>
                       <input type="email" id="email" name="Email" required="" placeholder="Adres email">
-                    <label for="phone">Telefon*</label>
-<div class="phone-wrapper">
-  <select id="country-code" required name="Kierunkowy">
+               <label for="phone">Telefon*</label>
+<div class="phone-group">
+  <select id="country-code" name="Kierunkowy" required>
   <option value="+355">🇦🇱 Albania (+355)</option>
   <option value="+376">🇦🇩 Andora (+376)</option>
   <option value="+43">🇦🇹 Austria (+43)</option>
@@ -770,8 +770,7 @@ Proszę podać daty przyjazdu i wyjazdu, liczbę osób oraz ewentualne pytania l
   <option value="+357">🇨🇾 Cypr (+357)</option>
   <option value="+36">🇭🇺 Węgry (+36)</option>
   <input type="tel" id="phone" name="Telefon" required placeholder="600 123 456">
-</div>
-                      <label for="arrival">Data przyjazdu*</label>
+            <label for="arrival">Data przyjazdu*</label>
                       <input type="date" id="arrival" name="Data przyjazdu" required="">
                       <label for="departure">Data wymeldowania*</label>
                       <input type="date" id="departure" name="Data wymeldowania" required="">
