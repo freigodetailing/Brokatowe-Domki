@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script>
 const phoneInput = document.getElementById("phone");
+	const countrySelect = document.getElementById("country-code");
 
 phoneInput.addEventListener("input", () => {
   let cleaned = phoneInput.value.replace(/\D/g, ""); // usuwa wszystko poza cyframi
@@ -180,6 +181,13 @@ document.querySelector("form.custom-form").addEventListener("submit", () => {
   const code = document.getElementById("country-code").value;
   const number = document.getElementById("phone").value.replace(/\s/g, "");
   document.getElementById("phone-full").value = code + " " + number;
+});
+	});
+
+document.querySelector("form").addEventListener("submit", () => {
+  const code = countrySelect.value;
+  const number = phoneInput.value.replace(/\s/g, "");
+  document.getElementById("phone-full").value = code + number;
 });
 </script>
 	
@@ -772,6 +780,7 @@ Proszę podać daty przyjazdu i wyjazdu, liczbę osób oraz ewentualne pytania l
   <option value="+36">🇭🇺 Węgry (+36)</option>
    <input type="tel" id="phone" name="Telefon" required placeholder="600 123 456">
 </div>
+<input type="hidden" id="phone-full" name="Telefon pełny">
             <label for="arrival">Data przyjazdu*</label>
                       <input type="date" id="arrival" name="Data przyjazdu" required="">
                       <label for="departure">Data wymeldowania*</label>
