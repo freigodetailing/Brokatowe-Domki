@@ -3655,36 +3655,3 @@
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
-
-.phone-group {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-}
-
-.phone-group select {
-  width: 110px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #fff;
-  font-size: 14px;
-}
-
-.phone-group input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Responsywność na telefony */
-@media(max-width: 480px) {
-  .phone-group {
-    flex-direction: row;
-  }
-
-  .phone-group select {
-    width: 90px;
-  }
-}
