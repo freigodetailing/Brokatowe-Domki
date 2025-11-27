@@ -46,6 +46,110 @@
 }</script>
     <meta name="theme-color" content="#6f66ee">
     <meta property="og:type" content="website">
+
+<!-- MODAL - powiadomienie o wysłaniu formularza -->
+<div id="successModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="close-btn">&times;</button>
+
+    <div class="modal-icon">
+      📩
+    </div>
+
+    <h3 class="modal-title">Das Formular wurde erfolgreich gesendet!</h3>
+    <p class="modal-text">
+      Ihre Anfrage wird in den nächsten Tagen geprüft und die Eigentümerin wird Sie per E-Mail oder telefonisch kontaktieren.
+      <br><br>
+      Mehrfaches Absenden des Formulars beschleunigt diesen Prozess nicht. Vielen Dank für Ihre Reservierung!
+    </p>
+  </div>
+</div>
+
+<style>
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  background: rgba(0,0,0,0.25);
+  z-index: 9999;
+}
+
+.modal-box {
+  width: 92%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.modal-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px;
+}
+
+.modal-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.45;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #777;
+  transition: .2s;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("sent") === "yes") {
+    const modal = document.getElementById("successModal");
+    modal.style.display = "flex";
+
+    const closeBtn = modal.querySelector(".close-btn");
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+      window.history.replaceState({}, document.title, window.location.pathname);
+    });
+
+    setTimeout(() => {
+      modal.style.display = "none";
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }, 6000);
+  }
+});
+</script>
+
+	
   </head>
   <body data-home-page="https://website6587942.nicepage.io/Strona-główna.html?version=1d95b736-fa19-381f-e605-25fdc760e8f8" data-home-page-title="Strona główna" data-path-to-root="../" data-include-products="false" class="u-body u-clearfix u-xl-mode" data-lang="de"><header class="u-box-shadow u-clearfix u-header u-sticky u-sticky-f52d u-white u-header" id="sec-6772"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="u-enable-responsive u-h-spacing-12 u-hover-feature u-language u-language-content-icon-text u-language-layout-dropdown u-v-spacing-6 u-language-1">
