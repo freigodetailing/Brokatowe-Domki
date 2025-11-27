@@ -731,10 +731,9 @@ Proszę podać daty przyjazdu i wyjazdu, liczbę osób oraz ewentualne pytania l
                       <label for="email">Email*</label>
                       <input type="email" id="email" name="Email" required="" placeholder="Adres email">
                <label for="phone">Telefon*</label>
-						 <label for="country-code">Telefon*</label>
-<div class="phone-wrapper">
-  <select id="country-code" name="Kierunkowy" required>
- <option value="+355">🇦🇱 Albania (+355)</option>
+<div class="phone-row">
+<select id="country-code" name="Kierunkowy" required>
+<option value="+355">🇦🇱 Albania (+355)</option>
 <option value="+376">🇦🇩 Andora (+376)</option>
 <option value="+994">🇦🇿 Azerbejdżan (+994)</option>
 <option value="+374">🇦🇲 Armenia (+374)</option>
@@ -780,8 +779,7 @@ Proszę podać daty przyjazdu i wyjazdu, liczbę osób oraz ewentualne pytania l
 <option value="+34">🇪🇸 Hiszpania (+34)</option>
 <option value="+40">🇷🇴 Rumunia (+40)</option>
 <option value="+36">🇭🇺 Węgry (+36)</option>
-
-   <input type="tel" id="phone" name="Telefon" required placeholder="600 123 456">
+ <input type="tel" id="phone" name="Telefon" required placeholder="600 123 456">
 </div>
 <input type="hidden" id="phone-full" name="Telefon pełny">
             <label for="arrival">Data przyjazdu*</label>
@@ -808,6 +806,29 @@ Proszę podać daty przyjazdu i wyjazdu, liczbę osób oraz ewentualne pytania l
   margin: auto;
   font-family: 'fubuntu', sans-serif;
   font-size: 14px;
+
+/* Kontener telefonu */
+.phone-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+/* Select kierunkowy */
+.phone-row select {
+  width: 110px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Pole numeru */
+.phone-row input {
+  flex: 1;
+}
 }
 /* Reset marginesów/paddingów */
 .custom-form * {
