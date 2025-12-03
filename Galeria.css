@@ -170,6 +170,18 @@
   padding: 20px;
 }
 
+.u-section-1 .u-gallery-item-12 {
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+}
+
+.u-section-1 .u-over-slide-12 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  padding: 20px;
+}
+
+
 
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
