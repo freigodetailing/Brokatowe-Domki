@@ -3659,9 +3659,8 @@
 }
 /* Napis Wyposażenie Domków 2 sekcja*/
 .u-section-wyposazenie-domkow .u-section-title {
+  @font-face {
   font-size: 4rem;
-  font-style: italic;
-  text-transform: uppercase;
   font-family: TheanoDidot-Regular1;
   margin-top: 30px;
   margin-bottom: 30px;
