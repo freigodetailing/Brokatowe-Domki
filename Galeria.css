@@ -297,7 +297,7 @@
 }
 
 .u-section-2 .u-gallery-1 {
-  height: 1350px;
+  height: 1450px;
   margin-top: 0;
   margin-bottom: 60px;
 }
@@ -444,7 +444,7 @@
 
 @media (max-width: 767px) {
   .u-section-2 .u-sheet-1 {
-    min-height: 3639px;
+    min-height: 3739px;
   }
 
   .u-section-2 .u-gallery-1 {
@@ -458,11 +458,11 @@
 
 @media (max-width: 575px) {
   .u-section-2 .u-sheet-1 {
-    min-height: 2117px;
+    min-height: 2257px;
   }
 
   .u-section-2 .u-gallery-1 {
-    height: 2448px;
+    height: 2648px;
   }
 } .u-section-3 {
   background-position: 50% 50%;
