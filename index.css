@@ -3659,14 +3659,9 @@
   /* Naprawi wysokość hamburgera */
   @media (max-width: 991px) {
     .u-header .u-hamburger-link {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 0;
-      z-index: 1000;
+ align-items: center; 
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
     }
-
-    .u-header .u-sheet-1 {
-      position: relative;
-    }
-  }
