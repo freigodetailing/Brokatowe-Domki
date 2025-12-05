@@ -3655,3 +3655,14 @@
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
+
+}
+/* Napis Wyposażenie Domków 2 sekcja*/
+.u-section-1 .u-section-title {
+  font-size: 6rem;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: TheanoDidot-Regular1;
+  font-weight: 400;
+  margin: 0 352px;
+}
