@@ -3655,13 +3655,3 @@
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
-
-  /* Naprawi wysokość hamburgera */
-  @media (max-width: 991px) {
-    .u-header .u-hamburger-link {
- align-items: center; 
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    }
