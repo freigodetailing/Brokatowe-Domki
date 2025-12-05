@@ -3659,10 +3659,12 @@
 }
 /* Napis Wyposażenie Domków 2 sekcja*/
 .u-section-1 .u-section-title {
-  font-size: 6rem;
+  font-size: 4rem;
   font-style: italic;
   text-transform: uppercase;
   font-family: TheanoDidot-Regular1;
-  font-weight: 400;
-  margin: 0 352px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+ 
 }
