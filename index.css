@@ -426,7 +426,9 @@
     margin-top: -53px;
     margin-left: 39px;
   }
-} .u-section-2 {
+}
+
+.u-section-2 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -936,7 +938,7 @@
   .u-section-2 .u-repeater-1 {
     grid-template-columns: repeat(1, 100%);
     min-height: 1029px;
-    --gap: 15px;
+    --gap: 30px;
     grid-auto-columns: 100%;
   }
 
@@ -962,7 +964,7 @@
 
   .u-section-2 .u-text-2 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -991,7 +993,7 @@
 
   .u-section-2 .u-text-4 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1020,7 +1022,7 @@
 
   .u-section-2 .u-text-6 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1049,7 +1051,7 @@
 
   .u-section-2 .u-text-8 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1078,7 +1080,7 @@
 
   .u-section-2 .u-text-10 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1107,7 +1109,7 @@
 
   .u-section-2 .u-text-12 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1136,7 +1138,7 @@
 
   .u-section-2 .u-text-14 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1165,7 +1167,7 @@
 
   .u-section-2 .u-text-16 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1194,7 +1196,7 @@
 
   .u-section-2 .u-text-18 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
@@ -1223,13 +1225,15 @@
 
   .u-section-2 .u-text-20 {
     font-size: 0.875rem;
-    line-height: 0.99;
+    line-height: 1.4;
     width: auto;
     margin-top: 14px;
     margin-right: -2px;
     margin-left: 89px;
   }
-} .u-section-3 {
+}
+
+.u-section-3 {
   background-position: 50% 33.85%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2223,7 +2227,7 @@
   }
 
   .u-section-3 .u-layout-wrap-1 {
-    margin-top: 31px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -2240,7 +2244,7 @@
   .u-section-3 .u-repeater-2 {
     grid-template-columns: repeat(1, 100%);
     min-height: 965px;
-    --gap: 0px;
+    --gap: 30px;
     grid-auto-columns: 100%;
   }
 
@@ -2260,6 +2264,7 @@
 
   .u-section-3 .u-text-8 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2281,6 +2286,7 @@
 
   .u-section-3 .u-text-10 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2302,6 +2308,7 @@
 
   .u-section-3 .u-text-12 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2323,6 +2330,7 @@
 
   .u-section-3 .u-text-14 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2344,6 +2352,7 @@
 
   .u-section-3 .u-text-16 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2365,6 +2374,7 @@
 
   .u-section-3 .u-text-18 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2386,6 +2396,7 @@
 
   .u-section-3 .u-text-20 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2407,6 +2418,7 @@
 
   .u-section-3 .u-text-22 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2428,6 +2440,7 @@
 
   .u-section-3 .u-text-24 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2449,6 +2462,7 @@
 
   .u-section-3 .u-text-26 {
     font-size: 0.875rem;
+    line-height: 1.4;
     margin-top: 5px;
     margin-right: -8px;
     margin-left: 79px;
@@ -2457,9 +2471,11 @@
 
 .u-section-3 .u-btn-1,
 .u-section-3 .u-btn-1:before,
-.u-section-3 .u-btn-1 > .u-container-layout:before {
+.u-section-3 .u-btn-1>.u-container-layout:before {
   transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
-} .u-section-4 {
+}
+
+.u-section-4 {
   background-image: none;
 }
 
@@ -2802,7 +2818,9 @@
   .u-section-4 .u-btn-1 {
     font-size: 1rem;
   }
-} .u-section-5 {
+}
+
+.u-section-5 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3446,7 +3464,9 @@
   .u-section-5 .u-text-11 {
     width: auto;
   }
-} .u-section-6 {
+}
+
+.u-section-6 {
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3629,9 +3649,13 @@
     width: 280px;
     margin: 27px 0 -13px;
   }
-}.u-section-7 .u-sheet-1 {
+}
+
+.u-section-7 .u-sheet-1 {
   min-height: 8px;
-}.u-section-8 .u-sheet-1 {
+}
+
+.u-section-8 .u-sheet-1 {
   min-height: 655px;
 }
 
@@ -3648,10 +3672,134 @@
     margin-bottom: -13px;
   }
 }
+
 /* page-custom-fonts */
 @font-face {
   font-family: 'TheanoDidot-Regular1';
   font-style: normal;
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
+}
+
+.section-title {
+  text-align: center !important;
+  font-family: 'TheanoDidot-Regular1', serif !important;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 90% !important;
+  height: 1px;
+  background-color: #000;
+  margin: 20px auto 0;
+}
+
+.h2-margin {
+  margin-top: 40px;
+  margin-bottom: 40px !important;
+
+}
+
+.u-section-2 .u-sheet-1::after {
+  content: '';
+  display: block;
+  width: 90% !important;
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 60px;
+}
+
+
+
+.u-section-3 .section-title {
+  margin-top: 60px !important;
+}
+
+
+.u-section-5 .u-text-2::after {
+  content: '';
+  display: block;
+  width: 90% !important;
+  height: 1px;
+  background-color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservation-header-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 0 !important;
+  padding: 0 15px 0 15px;
+}
+
+.reservation-header-container h2 {
+  width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.u-section-6-separator {
+  width: 90%;
+  height: 1px;
+  background-color: #000;
+  margin: 20px auto 0;
+}
+
+.u-section-8-separator {
+  width: 90% !important;
+  height: 1px;
+  background-color: #000;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Mobile adjustments for H2 separators */
+@media (max-width: 575px) {
+
+  .section-title::after,
+  .u-section-2 .u-sheet-1::after,
+  .u-section-5 .u-text-2::after {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .u-section-6-separator,
+  .u-section-8-separator {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Desktop font size increase for SEO paragraphs */
+@media (min-width: 992px) {
+  .u-align-justify.u-text[style*="font-family: Ubuntu"] {
+    font-size: 1.125rem !important;
+  }
+}
+
+/* Remove gap between SEO text and form in reservation section */
+.u-section-6 .reservation-header-container+.u-layout-wrap {
+  margin-top: 0 !important;
+}
+
+.u-section-6 .u-layout-wrap-1 {
+  margin-top: 0 !important;
+}
+
+.u-section-6 .data-layout-selected {
+  margin-top: 0 !important;
+}
+
+.u-section-6 .reservation-header-container+div {
+  margin-top: 0 !important;
 }
