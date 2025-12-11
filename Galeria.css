@@ -752,3 +752,28 @@
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
+
+/* USER REQUESTED OVERRIDES: UNIFIED GALLERY HEIGHTS */
+/* Enforce fixed height for all gallery items causing them to be uniform */
+.u-gallery-item, 
+.u-gallery-item .u-back-slide {
+    height: 300px !important;
+}
+
+/* Ensure images cover the area without distortion */
+.u-gallery-item .u-back-image {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Reset container heights to auto so they expand to fit the new item rows */
+.u-gallery,
+.u-gallery .u-gallery-inner,
+.u-section-1 .u-gallery-1,
+.u-section-2 .u-gallery-1,
+.u-section-3 .u-gallery-1 {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
