@@ -1322,7 +1322,7 @@
             </form>
             <style>
               .custom-form {
-                max-width: 400px;
+                max-width: 100%;
                 margin: auto;
                 font-family: 'fubuntu', sans-serif;
                 font-size: 14px;
@@ -1425,6 +1425,20 @@
                   margin-right: auto;
                   padding-left: 15px;
                   padding-right: 15px;
+                }
+
+                .custom-form .phone-row {
+                  flex-wrap: wrap;
+                }
+
+                .custom-form .phone-row select,
+                .custom-form .phone-row input {
+                  width: 100%;
+                  margin-top: 4px;
+                }
+
+                .custom-form .phone-row select {
+                  width: 100%;
                 }
               }
             </style>

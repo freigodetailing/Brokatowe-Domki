@@ -3478,7 +3478,7 @@
 
 .u-section-6 .u-text-1 {
   font-family: TheanoDidot-Regular1;
-  margin: 74px 95px 0 30px;
+  margin: 74px auto 0;
 }
 
 .u-section-6 .u-layout-wrap-1 {
@@ -3520,7 +3520,8 @@
   min-height: 833px;
   height: auto;
   background-image: none;
-  width: 460px;
+  width: 600px;
+  max-width: 100%;
   display: block;
   margin: 6px auto 0;
 }
@@ -3557,7 +3558,8 @@
 
   .u-section-6 .u-text-1 {
     width: auto;
-    margin-left: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .u-section-6 .u-layout-cell-1 {
@@ -3584,8 +3586,8 @@
   .u-section-6 .u-custom-html-1 {
     min-height: 809px;
     margin-top: 21px;
-    margin-right: initial;
-    margin-left: initial;
+    margin-right: auto;
+    margin-left: auto;
     width: auto;
   }
 }
@@ -3641,13 +3643,13 @@
   }
 
   .u-section-6 .u-container-layout-2 {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 
   .u-section-6 .u-custom-html-1 {
     min-height: 877px;
-    width: 280px;
-    margin: 27px 0 -13px;
+    width: 100%;
+    margin: 27px auto -13px;
   }
 }
 
