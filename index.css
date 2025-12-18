@@ -3805,3 +3805,115 @@
 .u-section-6 .reservation-header-container+div {
   margin-top: 0 !important;
 }
+
+/* SIDEBAR STYLES */
+.right-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  width: 320px;
+  background: white;
+  z-index: 10000;
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+  border-radius: 12px 0 0 12px;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.right-sidebar.active {
+  transform: translate(0, -50%);
+}
+
+.sidebar-toggle {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 60px;
+  background: white;
+  border-radius: 12px 0 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar-toggle:hover {
+  background: #f9f9f9;
+  color: #000;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(41, 45, 51, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.sidebar-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-title {
+  font-family: TheanoDidot-Regular1 !important;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.sidebar-link {
+  text-decoration: none !important;
+  color: #444;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  border: 1px solid transparent;
+}
+
+.sidebar-link:hover {
+  background: #fff;
+  border-color: #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateX(-3px);
+  color: #000;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .right-sidebar {
+    width: 280px;
+  }
+}
