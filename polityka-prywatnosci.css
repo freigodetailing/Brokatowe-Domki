@@ -192,3 +192,7 @@
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
+/* Mobile Menu Separators */
+.u-offcanvas .u-sidenav .u-nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
