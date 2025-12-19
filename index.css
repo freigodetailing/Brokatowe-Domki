@@ -3917,3 +3917,18 @@
     width: 280px;
   }
 }
+
+/* Custom Override for Main Menu Sidebar Width */
+@media (max-width: 1199px) {
+  .u-offcanvas .u-sidenav {
+    width: 260px !important;
+    flex-basis: 260px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-offcanvas .u-sidenav {
+    width: 240px !important;
+    flex-basis: 240px !important;
+  }
+}
