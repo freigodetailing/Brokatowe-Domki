@@ -1494,3 +1494,6 @@
 .u-offcanvas .u-sidenav .u-nav-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* Fix header height glitch */
+#sec-6772, #sec-6772 .u-sheet { height: auto !important; min-height: auto !important; }
