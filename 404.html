@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL" style="font-size: 16px;">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-858BSB54C5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-858BSB54C5');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="404, error, błąd, page not found">
+    <meta name="description" content="Strona nie została znaleziona.">
+    <title>404 - Strona nie znaleziona | Brokatowe Domki</title>
+    <link rel="stylesheet" href="Nicepage.css" media="screen">
+    <link rel="stylesheet" href="Index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
+
+    <style>
+        /* 404 Specific Styles */
+        @font-face {
+            font-family: 'TheanoDidot-Regular1';
+            src: url('fonts/TheanoDidot-Regular1.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            /* Ensure no default margins */
+            overflow-x: hidden;
+        }
+
+        .error-section {
+            min-height: 100vh;
+            /* Full viewport height to remove bottom white bar */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            /* Reduced padding to avoid overflow */
+            /* background-image: url('images/fale2-3.webp'); */
+            /* background-size: cover; */
+            background-color: #f5f5f5;
+        }
+
+        .error-code {
+            font-family: 'TheanoDidot-Regular1', 'Times New Roman', serif !important;
+            /* Force custom font */
+            font-size: 10rem !important;
+            /* Reduced from 12rem/15rem */
+            font-weight: 700;
+            color: #333;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .error-message-main {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            margin: 20px 0 40px;
+            padding: 0 15px;
+            /* Added side padding for mobile safety */
+            color: #555;
+            max-width: 800px;
+        }
+
+        .booking-section {
+            margin: 20px auto 0;
+            /* Auto margins for centering, Top margin 20px */
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .booking-title {
+            font-family: 'TheanoDidot-Regular1', serif !important;
+            /* Force custom font */
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000;
+            line-height: 1.3;
+            /* Better spacing for multi-line titles */
+        }
+
+        .booking-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            color: #666;
+        }
+
+        .custom-btn {
+            background-color: #478ac9;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+
+        .lang-content.active {
+            display: block;
+        }
+
+        /* Hide specific language elements by default, JS will show current */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        /* Wrapper to group 404 and ERROR subtitle */
+        .code-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            width: min-content;
+            /* Hugs the 404 text width */
+            margin: 0 auto;
+            /* Centers the wrapper */
+        }
+
+        .error-sub {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'TheanoDidot-Regular1', serif;
+            font-size: 2.5rem;
+            /* Smaller height */
+            font-weight: 700;
+            color: #333;
+            margin-top: -15px;
+            /* Pull it up closer to 404 "literally under" */
+            line-height: 1;
+            width: 100%;
+            /* Matches parent width (which matches 404) */
+        }
+
+        /* Button style mimicking the uploaded image: Transparent, White Border, Uppercase */
+        .u-btn-404 {
+            background-color: transparent !important;
+            color: #000000 !important;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            border: 3px solid #333 !important;
+            border-radius: 10px;
+            padding: 10px 40px;
+            margin: 10px auto 0;
+            display: inline-block;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .u-btn-404:hover {
+            background-color: #333 !important;
+            color: #fff !important;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem !important;
+                /* Reduced for mobile */
+            }
+
+            .error-sub {
+                font-size: 1.5rem;
+                /* Resize subtitle for mobile */
+                margin-top: -5px;
+            }
+
+            .error-message-main {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="u-body u-xl-mode">
+
+    <section class="error-section">
+        <!-- Simple Language Switcher in Main Content -->
+        <div class="simple-lang-switcher">
+            <a href="#" onclick="switchLang('pl'); return false;" class="lang-btn" title="Polski">
+                <svg class="u-svg-content" style="width: 60px; height: 40px;" viewBox="0 0 112 112">
+                    <rect fill="#EDEDED" height="80" width="112" y="16"></rect>
+                    <rect fill="#D80031" height="40" width="112" y="56"></rect>
+                </svg>
+            </a>
+            <a href="#" onclick="switchLang('en'); return false;" class="lang-btn" title="English">
+                <svg class="u-svg-content" style="width: 60px; height: 40px;" viewBox="0 0 112 112">
+                    <rect fill="#19237F" height="80" width="112" y="16"></rect>
+                    <path
+                        d="M47.8,16h3.5v33.7H0v-4.8h27.5L0,25.9v-3.8l33.2,22.8h7.7L0,16.8V16h8.8l39,26.9V16z M75,44.9h-7.7L109.4,16 h-5.1L65.1,42.9V16h-3.4v33.7H112v-4.8H85.4L112,26.6v-7L75,44.9z M61.7,96h3.4V70.7l37,25.3h9.9v-0.8L73.2,68.7H81l31,21.2v-3.1 L85.4,68.7H112v-4.8H61.7V96z M0,68.7h27.5L0,87.7v7.8l39.1-26.8h7.8L7.1,96H11l36.8-25.3V96h3.5V63.9H0V68.7z"
+                        fill="#EDEDED"></path>
+                    <path
+                        d="M112,16v3.6L75,44.9h-7.7L109.4,16H112z M73.2,68.7L112,95.2v-5.3L81,68.7H73.2z M40.9,44.9L0,16.8v5.3 l33.2,22.8C33.2,44.9,40.9,44.9,40.9,44.9z M39.1,68.7L0,95.5V96h7.1l39.8-27.3H39.1z M61.7,16H51.3v33.7H0v14.2h51.3V96h10.4V63.9 H112V49.7H61.7V16z"
+                        fill="#BD0034"></path>
+                </svg>
+            </a>
+            <a href="#" onclick="switchLang('de'); return false;" class="lang-btn" title="Deutsch">
+                <svg class="u-svg-content" style="width: 60px; height: 40px;" viewBox="0 0 112 112">
+                    <rect fill="#000000" height="26.7" width="112" y="16"></rect>
+                    <rect fill="#E1001F" height="26.7" width="112" y="42.7"></rect>
+                    <rect fill="#F6D928" height="26.7" width="112" y="69.3"></rect>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Polish Content -->
+        <div id="content-pl" class="lang-content active">
+            <div class="code-wrapper">
+                <h1 class="error-code">404</h1>
+                <div class="error-sub">
+                    <span>E</span><span>R</span><span>R</span><span>O</span><span>R</span>
+                </div>
+            </div>
+            <p class="error-message-main">Przepraszamy ale strona o tym adresie nie istnieje, Proszę sprawdzić adres
+                URL.</p>
+
+            <div class="booking-section">
+                <h2 class="booking-title">Odwiedź Brokatowe Domki na stronie Booking.com</h2>
+                <p class="booking-text">Zachęcamy do sprawdzenia dostępności i rezerwacji.</p>
+                <a class="u-btn-404" href="https://www.booking.com/hotel/pl/brokatowe-domki.pl.html" target="_blank">
+                    ZAREZERWUJ POBYT
+                </a>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="lang-content">
+            <div class="code-wrapper">
+                <h1 class="error-code">404</h1>
+                <div class="error-sub">
+                    <span>E</span><span>R</span><span>R</span><span>O</span><span>R</span>
+                </div>
+            </div>
+            <p class="error-message-main">Sorry, the page you are looking for does not exist. Please check the URL..</p>
+
+            <div class="booking-section">
+                <h2 class="booking-title">Visit Brokatowe Domki on Booking.com</h2>
+                <p class="booking-text">We encourage you to check availability and book.</p>
+                <a class="u-btn-404" href="https://www.booking.com/hotel/pl/brokatowe-domki.pl.html" target="_blank">
+                    BOOK NOW
+                </a>
+            </div>
+        </div>
+
+        <!-- German Content -->
+        <div id="content-de" class="lang-content">
+            <div class="code-wrapper">
+                <h1 class="error-code">404</h1>
+                <div class="error-sub">
+                    <span>E</span><span>R</span><span>R</span><span>O</span><span>R</span>
+                </div>
+            </div>
+            <p class="error-message-main">Entschuldigung, diese Seite existiert nicht. Bitte überprüfen Sie die URL.</p>
+
+            <div class="booking-section">
+                <h2 class="booking-title">Besuchen Sie Brokatowe Domki auf Booking.com</h2>
+                <p class="booking-text">Wir laden Sie ein, die Verfügbarkeit zu prüfen und zu buchen.</p>
+                <a class="u-btn-404" href="https://www.booking.com/hotel/pl/brokatowe-domki.pl.html" target="_blank">
+                    JETZT BUCHEN
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all contents
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+
+            // Show selected
+            document.getElementById('content-' + lang).classList.add('active');
+
+            // Highlight active button (optional visual cue)
+            // document.querySelectorAll('.lang-btn').forEach(btn => btn.style.border = 'none');
+            // document.querySelector(`.lang-btn[onclick*="'${lang}'"]`).style.border = '1px solid #ccc';
+        }
+
+        // Auto-detect language if possible (basic implementation)
+        document.addEventListener("DOMContentLoaded", () => {
+            const path = window.location.pathname;
+            if (path.includes('/en/')) {
+                switchLang('en');
+            } else if (path.includes('/de/')) {
+                switchLang('de');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
