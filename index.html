@@ -1584,7 +1584,7 @@
             <div class="input-group phone-group">
               <label class="static-label">Telefon*</label>
               <div class="phone-inputs">
-                <select id="country-code" name="Kierunkowy" required="">
+                <select id="country-code" required="">
                   <option value="+355">🇦🇱 (+355)</option>
                   <option value="+376">🇦🇩 (+376)</option>
                   <option value="+994">🇦🇿 (+994)</option>
@@ -1630,8 +1630,9 @@
                   <option value="+380">🇺🇦 (+380)</option>
                   <option value="+34">🇪🇸 (+34)</option>
                 </select>
-                <input id="phone" name="Telefon" placeholder="600 123 456" required="" type="tel" />
+                <input id="phone" placeholder="600 123 456" required="" type="tel" />
               </div>
+              <input type="hidden" id="full-phone" name="Telefon">
             </div>
 
             <div class="input-group guest-group">
@@ -1949,14 +1950,24 @@
             padding: 20px;
           }
 
-          /* Decrease spacing between opinion and reservation header on mobile */
+          /* Aggressive spacing fix for mobile */
           .u-section-6 {
-            padding-top: 0px !important;
+            padding-top: 0 !important;
+            min-height: auto !important;
           }
 
+          .u-section-6 .u-sheet-1 {
+            min-height: auto !important;
+            margin-top: 0 !important;
+            /* Override valign-bottom effect if possible via margin */
+            justify-content: flex-start !important;
+            /* Attempt to override flex alignment */
+          }
+
+          /* Force the header container to be close to the top */
           .reservation-header-container {
-            margin-top: 10px !important;
-            /* Small margin or 0 */
+            margin-top: 0 !important;
+            padding-top: 20px !important;
           }
         }
       </style>
@@ -2006,9 +2017,16 @@
           });
 
 
-          // 3. Existing Phone Formatting Logic (Adapted)
+          // 3. Phone Formatting & Concatenation
           const phoneInput = document.getElementById("phone");
           const countrySelect = document.getElementById("country-code");
+          const fullPhoneInput = document.getElementById("full-phone");
+
+          function updateFullPhone() {
+            if (fullPhoneInput) {
+              fullPhoneInput.value = `${countrySelect.value} ${phoneInput.value}`;
+            }
+          }
 
           phoneInput.addEventListener("input", () => {
             let cleaned = phoneInput.value.replace(/\D/g, ""); // usuwa wszystko poza cyframi
@@ -2019,23 +2037,17 @@
               cleaned = cleaned.replace(/(\d{3})(\d{3})(\d+)/, "$1 $2 $3");
             }
             phoneInput.value = cleaned;
+            updateFullPhone();
           });
 
-          // Attach full number to a hidden field or just ensure they are sent as separate fields.
-          // The backend likely expects them separate or we can concatenate on submit if needed.
-          // Based on previous code, let's keep them separate as 'Kierunkowy' and 'Telefon'.
-          // If the user previously had logic to concat, we can add it here if 'phone-full' exists, but it wasn't in the original form HTML viewed (lines 1600+), only in the script at top.
-          // Actually the script at top (lines 200+) referenced 'document.getElementById("phone-full")'.
-          // I should add a hidden input for phone-full just in case the backend relies on it, or just let formsubmit handle the parts.
-          // Let's add the hidden input to be safe since the old script referenced it.
-          // Check if old script is still there? Yes, lines 197-224.
-          // I should probably remove the old script or update it.
-          // Since I've replaced the form HTML, I should include the hidden input 'phone-full' inside the form.
+          countrySelect.addEventListener("change", updateFullPhone);
+
+          // Initial update
+          updateFullPhone();
         });
       </script>
 
-      <!-- Hidden input for concatenated phone (for compatibility) -->
-      <input type="hidden" id="phone-full" name="Telefon_Pelny" form="reservationForm">
+
 
       <script>
         // Minimal shim to ensure phone-full is populated on submit

@@ -2012,14 +2012,22 @@
             padding: 20px;
           }
 
-          /* Decrease spacing between opinion and reservation header on mobile */
+          /* Aggressive spacing fix for mobile */
           .u-section-6 {
-            padding-top: 0px !important;
+            padding-top: 0 !important;
+            min-height: auto !important;
           }
 
+          .u-section-6 .u-sheet-1 {
+            min-height: auto !important;
+            margin-top: 0 !important;
+            justify-content: flex-start !important;
+          }
+
+          /* Force the header container to be close to the top */
           .reservation-header-container {
-            margin-top: 10px !important;
-            /* Small margin or 0 */
+            margin-top: 0 !important;
+            padding-top: 20px !important;
           }
         }
       </style>
@@ -2068,23 +2076,27 @@
             if (val < 8) guestInput.value = val + 1;
           });
 
-          // 3. Hidden Phone Full Input (Optional - if backend expects it)
-          const form = document.getElementById('reservationForm');
+          // 3. Hidden Phone Full Input (Concatenation Logic)
           const phoneInput = document.getElementById('phone');
           const countrySelect = document.getElementById('country-code');
+          const fullPhoneInput = document.getElementById('full-phone');
 
-          // Create hidden input for full phone if not exists
-          let fullPhoneInput = document.createElement('input');
-          fullPhoneInput.type = 'hidden';
-          fullPhoneInput.id = 'phone-full';
-          fullPhoneInput.name = 'TelefonPelny'; // Adjust name if needed
-          form.appendChild(fullPhoneInput);
+          function updateFullPhone() {
+            if (fullPhoneInput) {
+              fullPhoneInput.value = `${countrySelect.value} ${phoneInput.value}`;
+            }
+          }
 
-          form.addEventListener('submit', function () {
-            const code = countrySelect.value;
-            const number = phoneInput.value.replace(/\s/g, "");
-            fullPhoneInput.value = code + " " + number;
+          phoneInput.addEventListener("input", function () {
+            updateFullPhone();
           });
+
+          countrySelect.addEventListener("change", updateFullPhone);
+
+          // Initial update
+          updateFullPhone();
+
+          // Legacy submit listener removed as we are updating in real-time
         });
       </script>
     </div>
