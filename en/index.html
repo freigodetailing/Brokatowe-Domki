@@ -84,6 +84,7 @@
   <!-- MODAL - powiadomienie o wysłaniu formularza -->
   <div class="modal-overlay" id="successModal">
     <div class="modal-box">
+      <div class="success-progress-bar" id="successProgressBar"></div>
       <button class="close-btn">
         ×
       </button>
@@ -124,6 +125,20 @@
       font-family: 'Ubuntu', sans-serif;
       position: relative;
       animation: fadeIn 0.4s ease-out;
+      overflow: hidden;
+      /* Ensure progress bar stays inside rounded corners */
+    }
+
+    .success-progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: #2196F3;
+      /* Same color as scroll bar */
+      z-index: 20;
+      transition: width 5.8s linear;
     }
 
     .modal-icon {
@@ -178,6 +193,14 @@
       if (params.get("status") === "success" || params.get("sent") === "yes") {
         const modal = document.getElementById("successModal");
         modal.style.display = "flex";
+
+        // Animate progress bar
+        const progressBar = document.getElementById("successProgressBar");
+        if (progressBar) {
+          setTimeout(() => {
+            progressBar.style.width = "100%";
+          }, 50);
+        }
 
         const closeBtn = modal.querySelector(".close-btn");
         closeBtn.addEventListener("click", () => {
@@ -2418,6 +2441,18 @@
       transform: scale(1);
     }
 
+    /* Progress Bar */
+    .promo-progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: #2196F3;
+      z-index: 20;
+      transition: width 14.5s linear;
+    }
+
     /* Close button - simplified */
     .promo-close-btn {
       position: absolute;
@@ -2502,6 +2537,7 @@
 
   <div class="promo-modal-overlay" id="promoModal">
     <div class="promo-modal-box">
+      <div class="promo-progress-bar" id="promoProgressBar"></div>
       <button class="promo-close-btn" id="closePromoModal">×</button>
       <img src="../images/dwa-domki.webp" alt="Brokatowe Domki" class="promo-modal-image">
       <div class="promo-modal-content">
@@ -2536,6 +2572,13 @@
       if (!isSuccess) {
         setTimeout(() => {
           modal.classList.add("active");
+          // Start progress bar animation
+          const progressBar = document.getElementById("promoProgressBar");
+          if (progressBar) {
+            setTimeout(() => {
+              progressBar.style.width = "100%";
+            }, 50);
+          }
         }, 500);
       }
 
