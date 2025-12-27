@@ -174,7 +174,8 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
-      if (params.get("sent") === "yes") {
+      // Support status=success and legacy sent=yes
+      if (params.get("status") === "success" || params.get("sent") === "yes") {
         const modal = document.getElementById("successModal");
         modal.style.display = "flex";
 
@@ -1619,7 +1620,7 @@
         <form action="https://formsubmit.co/edzia1703@o2.pl" class="custom-form" method="POST" id="reservationForm">
           <input name="_subject" type="hidden" value="NOWE ZAPYTANIE O REZERWACJE W BROKATOWYCH DOMKACH" />
           <input name="_captcha" type="hidden" value="false" />
-          <input name="_next" type="hidden" value="https://brokatowedomki.pl/en/?sent=yes" />
+          <input name="_next" type="hidden" value="https://brokatowedomki.pl/en/?status=success" />
 
           <!-- Row 1: Name and Email -->
           <div class="form-row">
@@ -2527,10 +2528,16 @@
       const closeBtn = document.getElementById("closePromoModal");
       const ctaBtn = document.getElementById("promoCtaBtn");
 
-      // Show modal after 500ms
-      setTimeout(() => {
-        modal.classList.add("active");
-      }, 500);
+      // Check for success (form submitted)
+      const params = new URLSearchParams(window.location.search);
+      const isSuccess = params.get("status") === "success" || params.get("sent") === "yes";
+
+      // If NOT success, show welcome modal after 0.5 seconds
+      if (!isSuccess) {
+        setTimeout(() => {
+          modal.classList.add("active");
+        }, 500);
+      }
 
       // Function to close modal
       const closeModal = () => {
