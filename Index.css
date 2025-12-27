@@ -4084,6 +4084,7 @@
     transition: all 0.3s ease;
     background: #f8f9fa;
     border: 1px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
   }
 
   .sidebar-link:hover {

@@ -2443,17 +2443,7 @@
       transform: scale(1);
     }
 
-    /* Progress Bar */
-    .promo-progress-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 3px;
-      background-color: #2196F3;
-      z-index: 20;
-      transition: width 14.5s linear;
-    }
+    /* Progress Bar REMOVED */
 
     /* Close button - simplified */
     .promo-close-btn {
@@ -2539,7 +2529,6 @@
 
   <div class="promo-modal-overlay" id="promoModal">
     <div class="promo-modal-box">
-      <div class="promo-progress-bar" id="promoProgressBar"></div>
       <button class="promo-close-btn" id="closePromoModal">×</button>
       <img src="../images/dwa-domki.webp" alt="Brokatowe Domki" class="promo-modal-image">
       <div class="promo-modal-content">
@@ -2574,15 +2563,6 @@
       if (!isSuccess) {
         setTimeout(() => {
           modal.classList.add("active");
-          // Start progress bar animation
-          const progressBar = document.getElementById("promoProgressBar");
-          if (progressBar) {
-            progressBar.style.width = "0%";
-            void progressBar.offsetWidth; // Force reflow
-            setTimeout(() => {
-              progressBar.style.width = "100%";
-            }, 100);
-          }
         }, 500);
       }
 
