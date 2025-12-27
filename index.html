@@ -202,9 +202,11 @@
         // Animate progress bar
         const progressBar = document.getElementById("successProgressBar");
         if (progressBar) {
+          progressBar.style.width = "0%";
+          void progressBar.offsetWidth; // Force reflow
           setTimeout(() => {
             progressBar.style.width = "100%";
-          }, 50);
+          }, 100);
         }
 
         const closeBtn = modal.querySelector(".close-btn");
@@ -2550,10 +2552,12 @@
         // Start progress bar animation
         const progressBar = document.getElementById("promoProgressBar");
         if (progressBar) {
+          progressBar.style.width = "0%";
+          void progressBar.offsetWidth; // Force reflow
           // Small delay to ensure transition works
           setTimeout(() => {
             progressBar.style.width = "100%";
-          }, 50);
+          }, 100);
         }
       }, 500);
     }
