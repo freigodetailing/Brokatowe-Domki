@@ -1209,11 +1209,6 @@
                           <br />
                           – Zaliczka nie podlega zwrotowi w przypadku rezygnacji z pobytu.
                         </p>
-                        <p class="u-align-left u-custom-font u-font-ubuntu u-text u-text-6">
-                          – Zameldowanie: od 16:00 do 20:00
-                          <br />
-                          – Wymeldowanie: do 10:00
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -2021,6 +2016,7 @@
           const datePicker = flatpickr("#date-range", {
             mode: "range",
             minDate: "today",
+            maxDate: new Date().fp_incr(365), // Limit to 365 days from today
             dateFormat: "Y-m-d",
             locale: "pl", // Polish locale
             disableMobile: "true", // Force custom picker on mobile
