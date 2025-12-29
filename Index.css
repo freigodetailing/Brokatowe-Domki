@@ -4151,3 +4151,87 @@
     height: auto !important;
     min-height: auto !important;
   }
+
+  /* Facebook Sidebar */
+  .fb-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+    width: 340px;
+    background: white;
+    z-index: 10001;
+    /* Higher than regular sidebar */
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px 0 0 12px;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .fb-sidebar.active {
+    transform: translate(0, -50%);
+  }
+
+  .fb-toggle {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%) translateY(70px);
+    /* Offset below the main toggle */
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    color: #1877F2;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .fb-toggle:hover {
+    background: #f0f0f0;
+    color: #166fe5;
+  }
+
+  .fb-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fb-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(41, 45, 51, 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  .fb-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .fb-content {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  /* Mobile Adjustments for FB Sidebar */
+  @media (max-width: 400px) {
+    .fb-sidebar {
+      width: 300px;
+    }
+
+    .fb-content iframe {
+      width: 300px !important;
+    }
+  }
