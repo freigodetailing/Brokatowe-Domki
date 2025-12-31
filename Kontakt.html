@@ -65,6 +65,7 @@
   <meta content="#6f66ee" name="theme-color" />
   <meta content="website" property="og:type" />
   <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+
 </head>
 
 <body class="u-body u-clearfix u-xl-mode" data-include-products="false" data-lang="pl" data-path-to-root="./">
@@ -443,55 +444,48 @@
       </div>
     </div>
   </section>
-  <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-section-3"
-    id="sec-9a39">
-    <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-      <div class="custom-expanded u-clearfix u-custom-html u-custom-html-1">
-        <style>
+  <section class="u-clearfix u-section-3" id="sec-9a39" style="padding: 0; margin: 0;">
+    <div class="u-clearfix u-custom-html u-custom-html-1" style="width: 100%; margin: 0; padding: 0;">
+      <style>
+        .map-wrapper {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        /* DUŻE EKRANY */
+        @media (min-width: 721px) {
           .map-wrapper {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 12px;
+            height: 60vh;
+            min-height: 450px;
+            max-height: 700px;
           }
+        }
 
-          /* DUŻE EKRANY – klasyczny 16:9 */
-          @media (min-width: 721px) {
-            .map-wrapper {
-              height: calc(100vw * 0.56);
-              /* 16:9 */
-              max-height: 500px;
-            }
+        /* TELEFONY – pionowa mapa, bez odstępów */
+        @media (max-width: 720px) {
+          .map-wrapper {
+            height: 550px;
           }
+        }
 
-          /* TELEFONY – pionowa mapa, bez odstępów */
-          @media (max-width: 720px) {
-            .map-wrapper {
-              height: 550px;
-              /* pionowa wysokość */
-            }
+        @media (max-width: 450px) {
+          .map-wrapper {
+            height: 600px;
           }
+        }
 
-          @media (max-width: 450px) {
-            .map-wrapper {
-              height: 600px;
-              /* trochę wyżej na małych ekranach */
-            }
+        @media (max-width: 360px) {
+          .map-wrapper {
+            height: 650px;
           }
-
-          @media (max-width: 360px) {
-            .map-wrapper {
-              height: 650px;
-              /* bardzo małe telefony */
-            }
-          }
-        </style>
-        <div class="map-wrapper">
-          <iframe allowfullscreen=""
-            src="https://www.google.com/maps/d/u/0/embed?mid=163UU5Hg954CQwe5_lcqaufzqXGJ0CI4&amp;ehbc=2E312F&amp;noprof=1"
-            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;">
-          </iframe>
-        </div>
+        }
+      </style>
+      <div class="map-wrapper">
+        <iframe allowfullscreen=""
+          src="https://www.google.com/maps/d/u/0/embed?mid=163UU5Hg954CQwe5_lcqaufzqXGJ0CI4&amp;ehbc=2E312F&amp;noprof=1"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;">
+        </iframe>
       </div>
     </div>
   </section>
