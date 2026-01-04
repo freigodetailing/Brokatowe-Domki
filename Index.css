@@ -1,4 +1,4 @@
-.u-section-1 .u-sheet-1 {
+﻿.u-section-1 .u-sheet-1 {
   min-height: 1032px;
 }
 
@@ -4235,3 +4235,39 @@
       width: 300px !important;
     }
   }
+
+   
+}
+
+h2,
+.u-section-2 h2,
+h2.u-text,
+h2.u-custom-font {
+  color: #4a4a4a !important;
+}
+
+/* Align spacing and add separators to Amenities and Attractions lists */
+#sec-8360 .u-list-1 .u-list-item,
+#sec-5b34 .u-list-2 .u-list-item {
+  position: relative;
+  margin-bottom: 15px !important;
+  /* Force consistent margin */
+  padding-bottom: 15px !important;
+  /* Force consistent padding */
+  border-bottom: none;
+  /* Ensure no default border */
+}
+
+/* Add separator with 40px margin from left and right using pseudo-element */
+#sec-8360 .u-list-1 .u-list-item::after,
+#sec-5b34 .u-list-2 .u-list-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  right: 40px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  /* Invisible separator but keeps logic */
+}
