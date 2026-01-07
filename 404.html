@@ -11,6 +11,19 @@
 
         gtag('config', 'G-858BSB54C5');
     </script>
+    <!-- Redirect uppercase URLs to lowercase -->
+    <script>
+        (function () {
+            var path = window.location.pathname;
+            // Check if path contains uppercase letters
+            if (path.match(/[A-Z]/)) {
+                // Convert to lowercase
+                var lowercasePath = path.toLowerCase();
+                // Redirect preserving query string and hash
+                window.location.replace(lowercasePath + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="404, error, błąd, page not found">
@@ -252,6 +265,10 @@
                     ZAREZERWUJ POBYT
                 </a>
             </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="/sitemap.xml"
+                    style="color: #666; text-decoration: none; font-family: 'Ubuntu', sans-serif;">Mapa Strony</a>
+            </div>
         </div>
 
         <!-- English Content -->
@@ -271,6 +288,10 @@
                     BOOK NOW
                 </a>
             </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="/sitemap.xml"
+                    style="color: #666; text-decoration: none; font-family: 'Ubuntu', sans-serif;">Sitemap</a>
+            </div>
         </div>
 
         <!-- German Content -->
@@ -289,6 +310,10 @@
                 <a class="u-btn-404" href="https://www.booking.com/hotel/pl/brokatowe-domki.pl.html" target="_blank">
                     JETZT BUCHEN
                 </a>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="/sitemap.xml"
+                    style="color: #666; text-decoration: none; font-family: 'Ubuntu', sans-serif;">Sitemap</a>
             </div>
         </div>
 
