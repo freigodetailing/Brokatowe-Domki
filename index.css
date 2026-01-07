@@ -1,4 +1,4 @@
-.u-section-1 .u-sheet-1 {
+﻿.u-section-1 .u-sheet-1 {
   min-height: 1032px;
 }
 
@@ -358,7 +358,12 @@
     font-size: 0.875rem;
     margin-top: 43px;
     margin-left: auto;
+    margin-right: auto !important;
     padding: 10px 16px 11px 15px;
+    width: 250px !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    text-align: center !important;
   }
 
   .u-section-1 .u-layout-wrap-1 {
@@ -423,7 +428,7 @@
   .u-section-1 .u-icon-2 {
     width: 19px;
     height: 19px;
-    margin-top: -53px;
+    margin-top: -47px;
     margin-left: 39px;
   }
 }
@@ -436,11 +441,14 @@
 
 .u-section-2 .u-sheet-1 {
   min-height: 681px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
 }
 
 .u-section-2 .u-layout-wrap-1 {
   width: 1145px;
-  margin: 37px auto 50px -5px;
+  margin: 37px auto 50px auto;
 }
 
 .u-section-2 .u-layout-cell-1 {
@@ -3895,6 +3903,7 @@
   transition: all 0.3s ease;
   background: #f8f9fa;
   border: 1px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-link:hover {
@@ -4080,6 +4089,7 @@
     transition: all 0.3s ease;
     background: #f8f9fa;
     border: 1px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
   }
 
   .sidebar-link:hover {
@@ -4139,5 +4149,130 @@
     background-color: #2196F3;
     width: 0%;
   }
-/* Fix header height glitch */
-#sec-6772, #sec-6772 .u-sheet { height: auto !important; min-height: auto !important; }
+
+  /* Fix header height glitch */
+  #sec-6772,
+  #sec-6772 .u-sheet {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  /* Facebook Sidebar */
+  .fb-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+    width: 340px;
+    background: white;
+    z-index: 10001;
+    /* Higher than regular sidebar */
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px 0 0 12px;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .fb-sidebar.active {
+    transform: translate(0, -50%);
+  }
+
+  .fb-toggle {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%) translateY(70px);
+    /* Offset below the main toggle */
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    color: #1877F2;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .fb-toggle:hover {
+    background: #f0f0f0;
+    color: #166fe5;
+  }
+
+  .fb-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fb-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(41, 45, 51, 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  .fb-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .fb-content {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  /* Mobile Adjustments for FB Sidebar */
+  @media (max-width: 400px) {
+    .fb-sidebar {
+      width: 300px;
+    }
+
+    .fb-content iframe {
+      width: 300px !important;
+    }
+  }
+
+   
+}
+
+h2,
+.u-section-2 h2,
+h2.u-text,
+h2.u-custom-font {
+  color: #4a4a4a !important;
+}
+
+/* Align spacing and add separators to Amenities and Attractions lists */
+#sec-8360 .u-list-1 .u-list-item,
+#sec-5b34 .u-list-2 .u-list-item {
+  position: relative;
+  margin-bottom: 15px !important;
+  /* Force consistent margin */
+  padding-bottom: 15px !important;
+  /* Force consistent padding */
+  border-bottom: none;
+  /* Ensure no default border */
+}
+
+/* Add separator with 40px margin from left and right using pseudo-element */
+#sec-8360 .u-list-1 .u-list-item::after,
+#sec-5b34 .u-list-2 .u-list-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  right: 40px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  /* Invisible separator but keeps logic */
+}

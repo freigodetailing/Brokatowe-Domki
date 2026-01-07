@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de" style="font-size: 16px;">
 
 <head>
@@ -26,16 +26,14 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta charset="utf-8" />
   <meta
-    content="Brokatowe Domki Gąski, Ferienhäuser Gąski, Unterkunft Gąski, Übernachtung Gąski, Ferienhaus an der Ostsee, ganzjährige Ferienhäuser, Urlaub in Gąski, Strandunterkunft"
+    content="Brokatowe Domki, Gąski, ganzjährige Ferienhäuser, Ferienhäuser am Meer, Unterkunft Gąski, Urlaub an der Ostsee, Familienurlaub, 70m2, Spielplatz, Ostsee, ruhige Ferienhäuser in Strandnähe, idealer Ort für Familienurlaub, komfortable Ferienhäuser mit Terrasse, sicherer Urlaub mit Kindern"
     name="keywords" />
   <meta
     content="Brokatowe Domki in Gąski – Komfortable, ganzjährige Ferienhäuser 800m vom Meer entfernt. Buchen Sie Ihre Unterkunft in einer ruhigen Gegend, in der Nähe des Strandes und des Leuchtturms. Der perfekte Ort für einen Urlaub oder einen Wochenendausflug an die Ostsee!"
     name="description" />
-  <title>
-    Brokatowe Domki in Gąski zu vermieten
-  </title>
-  <link href="../nicepage.css" media="screen" rel="stylesheet" />
-  <link href="../index.css" media="screen" rel="stylesheet" />
+  <title>Brokatowe Domki: Ganzjährige Ferienhäuser (70m2) in Gąski am Meer</title>
+  <link href="../Nicepage.css" media="screen" rel="stylesheet" />
+  <link href="../Index.css" media="screen" rel="stylesheet" />
   <script class="u-script" defer="" src="../jquery.js" type="text/javascript">
   </script>
   <script class="u-script" defer="" src="../nicepage.js" type="text/javascript">
@@ -54,10 +52,13 @@
     property="og:description" />
   <meta content="hQD389dzbvgX3H4dR3AvjVblojWUNyCfXLHeVl6Mz9g" name="google-site-verification">
   <meta content="https://brokatowedomki.pl/de/" property="og:url" />
-  <meta content="https://brokatowedomki.pl/images/Salon-z-widokiem-na-okna-1.jpg" property="og:image" />
-  <meta content="Gemütliches Wohnzimmer" property="og:image:alt" />
-  <meta content="https://brokatowedomki.pl/images/zdjcie-brokatowych-domkw.jpg" property="og:image" />
+  <meta content="https://brokatowedomki.pl/images/Domek-zielony.webp" property="og:image" />
   <meta content="Ansicht des Ferienhauses" property="og:image:alt" />
+  <meta content="https://brokatowedomki.pl/images/Salon-z-widokiem-na-okna-1.webp" property="og:image" />
+  <meta content="Gemütliches Wohnzimmer" property="og:image:alt" />
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://brokatowedomki.pl/images/Domek-zielony.webp" name="twitter:image">
+  <link rel="icon" href="../images/favicon_circular_v2.png" type="image/png">
   <link href="https://brokatowedomki.pl/de/" rel="canonical" />
   <link href="https://brokatowedomki.pl/" hreflang="pl" rel="alternate" />
   <link href="https://brokatowedomki.pl/de/" hreflang="de" rel="alternate" />
@@ -66,19 +67,29 @@
   <link
     href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
     id="u-page-google-font" rel="stylesheet" />
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
   <script type="application/ld+json">
     {
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Brokatowe Domki",
-		"url": "/"
+		"url": "https://brokatowedomki.pl/de/"
 }
    </script>
   <meta content="#6f66ee" name="theme-color" />
   <meta content="website" property="og:type" />
   <!-- MODAL - powiadomienie o wysłaniu formularza -->
+
+</head>
+
+<body class="u-body u-clearfix u-xl-mode"
+  data-home-page="https://website6587942.nicepage.io/strona-glowna.html?version=1d95b736-fa19-381f-e605-25fdc760e8f8"
+  data-home-page-title="Strona główna" data-include-products="false" data-lang="de" data-path-to-root="../">
   <div class="modal-overlay" id="successModal">
     <div class="modal-box">
+      <div class="success-progress-bar" id="successProgressBar"></div>
       <button class="close-btn">
         ×
       </button>
@@ -120,6 +131,20 @@
       font-family: 'Ubuntu', sans-serif;
       position: relative;
       animation: fadeIn 0.4s ease-out;
+      overflow: hidden;
+      /* Ensure progress bar stays inside rounded corners */
+    }
+
+    .success-progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: #2196F3;
+      /* Same color as scroll bar */
+      z-index: 20;
+      transition: width 5.8s linear;
     }
 
     .modal-icon {
@@ -170,9 +195,20 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
-      if (params.get("sent") === "yes") {
+      // Support status=success and legacy sent=yes
+      if (params.get("status") === "success" || params.get("sent") === "yes") {
         const modal = document.getElementById("successModal");
         modal.style.display = "flex";
+
+        // Animate progress bar
+        const progressBar = document.getElementById("successProgressBar");
+        if (progressBar) {
+          progressBar.style.width = "0%";
+          void progressBar.offsetWidth; // Force reflow
+          setTimeout(() => {
+            progressBar.style.width = "100%";
+          }, 100);
+        }
 
         const closeBtn = modal.querySelector(".close-btn");
         closeBtn.addEventListener("click", () => {
@@ -217,12 +253,6 @@
       document.getElementById("phone-full").value = code + number;
     });
   </script>
-  </meta>
-</head>
-
-<body class="u-body u-clearfix u-xl-mode"
-  data-home-page="https://website6587942.nicepage.io/strona-glowna.html?version=1d95b736-fa19-381f-e605-25fdc760e8f8"
-  data-home-page-title="Strona główna" data-include-products="false" data-lang="de" data-path-to-root="../">
   <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W3QG77ZT"
@@ -376,9 +406,9 @@
             </li>
             <li class="u-nav-item" role="none">
               <a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4"
-                data-lang-de='{"content":"Galerie","href":"/de/galeria.html"}'
-                data-lang-en='{"content":"Gallery","href":"/en/galeria.html"}'
-                data-lang-pl='{"content":"Galeria","href":"/galeria.html"}' href="galeria.html" role="menuitem"
+                data-lang-de='{"content":"Galerie","href":"/de/Galeria.html"}'
+                data-lang-en='{"content":"Gallery","href":"/en/Galeria.html"}'
+                data-lang-pl='{"content":"Galeria","href":"/Galeria.html"}' href="Galeria.html" role="menuitem"
                 style="padding: 10px 20px; text-decoration: underline !important;">
                 Galerie
               </a>
@@ -395,28 +425,27 @@
             </li>
             <li class="u-nav-item" role="none">
               <a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4"
-                data-lang-de='{"content":"Standort","href":"114086660#block-2"}'
-                data-lang-en='{"content":"Location","href":"114086660#block-2"}'
-                data-lang-pl='{"content":"Lokalizacja","href":"114086660#block-2"}' data-page-id="114086660"
-                href="../de/#block-2" role="menuitem"
-                style="padding: 10px 20px; text-decoration: underline !important;">
-                Standort
+                data-lang-de='{"content":"Preisliste","href":"cennik.html"}'
+                data-lang-en='{"content":"Price List","href":"../en/cennik.html"}'
+                data-lang-pl='{"content":"Cennik","href":"../cennik.html"}' data-page-id="114086660" href="cennik.html"
+                role="menuitem" style="padding: 10px 20px; text-decoration: underline !important;">
+                Preisliste
               </a>
             </li>
             <li class="u-nav-item" role="none">
               <a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4"
-                data-lang-de='{"content":"Kontakt","href":"/de/kontakt.html"}'
-                data-lang-en='{"content":"Contact","href":"/en/kontakt.html"}'
-                data-lang-pl='{"content":"Kontakt","href":"/kontakt.html"}' href="kontakt.html" role="menuitem"
+                data-lang-de='{"content":"Kontakt","href":"/de/Kontakt.html"}'
+                data-lang-en='{"content":"Contact","href":"/en/Kontakt.html"}'
+                data-lang-pl='{"content":"Kontakt","href":"/Kontakt.html"}' href="Kontakt.html" role="menuitem"
                 style="padding: 10px 20px; text-decoration: underline !important;">
                 Kontakt
               </a>
             </li>
             <li class="u-nav-item" role="none">
               <a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4"
-                data-lang-de='{"content":"AGB","href":"/de/regulamin.html"}'
-                data-lang-en='{"content":"Terms and Conditions","href":"/en/regulamin.html"}'
-                data-lang-pl='{"content":"Regulamin","href":"/regulamin.html"}' href="regulamin.html" role="menuitem"
+                data-lang-de='{"content":"AGB","href":"/de/Regulamin.html"}'
+                data-lang-en='{"content":"Terms and Conditions","href":"/en/Regulamin.html"}'
+                data-lang-pl='{"content":"Regulamin","href":"/Regulamin.html"}' href="Regulamin.html" role="menuitem"
                 style="padding: 10px 20px; text-decoration: underline !important;">
                 AGB
               </a>
@@ -441,9 +470,9 @@
                   </a>
                 </li>
                 <li class="u-nav-item" role="none">
-                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"Galerie","href":"/de/galeria.html"}'
-                    data-lang-en='{"content":"Gallery","href":"/en/galeria.html"}'
-                    data-lang-pl='{"content":"Galeria","href":"/galeria.html"}' href="galeria.html" role="menuitem"
+                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"Galerie","href":"/de/Galeria.html"}'
+                    data-lang-en='{"content":"Gallery","href":"/en/Galeria.html"}'
+                    data-lang-pl='{"content":"Galeria","href":"/Galeria.html"}' href="Galeria.html" role="menuitem"
                     style="padding-top: 34px; padding-bottom: 34px;">
                     Galerie
                   </a>
@@ -459,25 +488,25 @@
                   </a>
                 </li>
                 <li class="u-nav-item" role="none">
-                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"Standort","href":"114086660#block-2"}'
-                    data-lang-en='{"content":"Location","href":"114086660#block-2"}'
-                    data-lang-pl='{"content":"Lokalizacja","href":"114086660#block-2"}' data-page-id="114086660"
-                    href="../de/#block-2" role="menuitem" style="padding-top: 34px; padding-bottom: 34px;">
-                    Standort
+                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"Preisliste","href":"cennik.html"}'
+                    data-lang-en='{"content":"Price List","href":"../en/cennik.html"}'
+                    data-lang-pl='{"content":"Cennik","href":"../cennik.html"}' data-page-id="114086660"
+                    href="cennik.html" role="menuitem" style="padding-top: 34px; padding-bottom: 34px;">
+                    Preisliste
                   </a>
                 </li>
                 <li class="u-nav-item" role="none">
-                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"Kontakt","href":"/de/kontakt.html"}'
-                    data-lang-en='{"content":"Contact","href":"/en/kontakt.html"}'
-                    data-lang-pl='{"content":"Kontakt","href":"/kontakt.html"}' href="kontakt.html" role="menuitem"
+                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"Kontakt","href":"/de/Kontakt.html"}'
+                    data-lang-en='{"content":"Contact","href":"/en/Kontakt.html"}'
+                    data-lang-pl='{"content":"Kontakt","href":"/Kontakt.html"}' href="Kontakt.html" role="menuitem"
                     style="padding-top: 34px; padding-bottom: 34px;">
                     Kontakt
                   </a>
                 </li>
                 <li class="u-nav-item" role="none">
-                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"AGB","href":"/de/regulamin.html"}'
-                    data-lang-en='{"content":"Terms and Conditions","href":"/en/regulamin.html"}'
-                    data-lang-pl='{"content":"Regulamin","href":"/regulamin.html"}' href="regulamin.html"
+                  <a class="u-button-style u-nav-link" data-lang-de='{"content":"AGB","href":"/de/Regulamin.html"}'
+                    data-lang-en='{"content":"Terms and Conditions","href":"/en/Regulamin.html"}'
+                    data-lang-pl='{"content":"Regulamin","href":"/Regulamin.html"}' href="Regulamin.html"
                     role="menuitem" style="padding-top: 34px; padding-bottom: 34px;">
                     AGB
                   </a>
@@ -502,7 +531,7 @@
       <div
         class="custom-expanded u-align-justify u-container-style u-group u-image u-image-round u-radius u-shading u-image-1"
         data-image-height="1280" data-image-width="1920"
-        style="background-image: linear-gradient(to bottom, rgba(41, 45, 51, 0.7), rgba(41, 45, 51, 0.7)), url('../images/zdjcie-brokatowych-domkw.jpg');">
+        style="background-image: linear-gradient(to bottom, rgba(41, 45, 51, 0.7), rgba(41, 45, 51, 0.7)), url('../images/zdjecie-brokatowych-domkow.webp');">
         <div class="u-container-layout u-valign-bottom u-container-layout-1">
           <h1 class="u-custom-font u-text u-text-white u-text-1">
             Brokatowe
@@ -540,7 +569,7 @@
                       </svg>
                     </span>
                     <p class="u-align-center-xs u-custom-font u-text u-text-default u-text-3">
-                      Gąski​
+                      Gąski
                     </p>
                   </div>
                 </div>
@@ -568,7 +597,7 @@
                 <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-3">
                   <div class="u-container-layout u-container-layout-4">
                     <p class="u-custom-font u-text u-text-default u-text-5">
-                      ​Ganzjährig
+                      Ganzjährig
                     </p>
                     <span class="u-icon u-icon-2">
                       <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 60 60">
@@ -622,7 +651,7 @@
   <section
     class="u-clearfix u-image u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-section-2"
     data-image-height="1920" data-image-width="1358" id="sec-8360"
-    style="background-image: url('../images/fale2-3.png');">
+    style="background-image: url('../images/fale2-3.webp');">
     <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-sheet-1">
       <div class="data-layout-selected u-clearfix u-expanded-width-xs u-gutter-20 u-layout-wrap u-layout-wrap-1">
         <h2 class="section-title h2-margin u-custom-font u-text-black">
@@ -645,7 +674,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-2">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-1">
-                          <img alt="Parkplatz-Symbol" src="../images/parking2-5f521933.png" />
+                          <img alt="Parkplatz-Symbol" src="../images/ikona-parkingu3.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1">
@@ -660,7 +689,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-3">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-2">
-                          <img alt="Wohnzimmer-Symbol" src="../images/sofa1-8d9f506f.png" />
+                          <img alt="Wohnzimmer-Symbol" src="../images/sofa2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-3">
@@ -675,7 +704,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-4">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-3">
-                          <img alt="WLAN-Symbol" src="../images/wifi4-a62cd819.png" />
+                          <img alt="WLAN-Symbol" src="../images/wifi5.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-5">
@@ -690,7 +719,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-5">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-4">
-                          <img alt="Haustier-Symbol" src="../images/apa1-a70216b7.png" />
+                          <img alt="Haustier-Symbol" src="../images/lapa2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-7">
@@ -705,7 +734,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-6">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-5">
-                          <img alt="Badezimmer-Symbol" src="../images/Prysznic2-ee0ccf69.png" />
+                          <img alt="Badezimmer-Symbol" src="../images/Prysznic3.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-9">
@@ -720,7 +749,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-7">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-6">
-                          <img alt="Haus-Symbol" src="../images/domek1-23e51220.png" />
+                          <img alt="Haus-Symbol" src="../images/domek2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-11">
@@ -735,7 +764,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-8">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-7">
-                          <img alt="Küche-Symbol" src="../images/mikser1-81a1fc6a.png" />
+                          <img alt="Küche-Symbol" src="../images/mikser2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-13">
@@ -750,7 +779,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-9">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-8">
-                          <img alt="Garten-Symbol" src="../images/Rolinka1-c8b13ad6.png" />
+                          <img alt="Garten-Symbol" src="../images/roslinka2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-15">
@@ -765,7 +794,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-10">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-9">
-                          <img alt="Grill-Symbol" src="../images/Grill1-877aba93.png" />
+                          <img alt="Grill-Symbol" src="../images/Grill2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-17">
@@ -780,7 +809,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-11">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-10">
-                          <img alt="Spielplatz-Symbol" src="../images/plac-zabaw.png" />
+                          <img alt="Spielplatz-Symbol" src="../images/plac-zabaw.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-19">
@@ -802,7 +831,7 @@
     </div>
   </section>
   <section class="u-clearfix u-image u-section-3" data-image-height="2481" data-image-width="1749" id="sec-5b34"
-    style="background-image: url('../images/fale2-3.png');">
+    style="background-image: url('../images/fale2-3.webp');">
     <div class="u-clearfix u-sheet u-valign-bottom-xs u-valign-middle-sm u-sheet-1">
       <div class="u-expanded-width u-list u-list-1">
         <div class="u-repeater u-repeater-1">
@@ -811,7 +840,7 @@
             data-image-height="1920" data-image-width="1280">
             <div class="u-background-effect u-expanded">
               <div class="u-background-effect-image u-expanded u-image u-image-1"
-                style="background-image: url('../images/Brokatowe-domki.jpg');">
+                style="background-image: url('../images/Brokatowe-domki.webp');">
               </div>
             </div>
             <div class="u-container-layout u-similar-container u-container-layout-1">
@@ -830,7 +859,7 @@
             data-image-height="1920" data-image-width="1280">
             <div class="u-background-effect u-expanded">
               <div class="u-background-effect-image u-expanded u-image u-image-2"
-                style="background-image: url('../images/Kuchnia.jpg');">
+                style="background-image: url('../images/Kuchnia.webp');">
               </div>
             </div>
             <div class="u-container-layout u-similar-container u-container-layout-3">
@@ -849,7 +878,7 @@
             data-image-height="1920" data-image-width="1280">
             <div class="u-background-effect u-expanded">
               <div class="u-background-effect-image u-expanded u-image u-image-3"
-                style="background-image: url('../images/Grill.jpg');">
+                style="background-image: url('../images/Grill.webp');">
               </div>
             </div>
             <div class="u-container-layout u-similar-container u-container-layout-5">
@@ -868,7 +897,7 @@
             data-image-height="1920" data-image-width="1280">
             <div class="u-background-effect u-expanded">
               <div class="u-background-effect-image u-expanded u-image u-image-4" data-image-height="1280"
-                data-image-width="1920" style="background-image: url('../images/Salon-z-widokiem-na-okna-1.jpg');">
+                data-image-width="1920" style="background-image: url('../images/Salon-z-widokiem-na-okna-1.webp');">
               </div>
             </div>
             <div class="u-container-layout u-similar-container u-container-layout-7">
@@ -887,7 +916,7 @@
             data-image-height="1920" data-image-width="1280">
             <div class="u-background-effect u-expanded">
               <div class="u-background-effect-image u-expanded u-image u-image-5"
-                style="background-image: url('../images/Sypialnia-w-drugim-domku.png');">
+                style="background-image: url('../images/Sypialnia-w-drugim-domku.webp');">
               </div>
             </div>
             <div class="u-container-layout u-similar-container u-container-layout-9">
@@ -906,7 +935,7 @@
             data-image-height="1920" data-image-width="1280">
             <div class="u-background-effect u-expanded">
               <div class="u-background-effect-image u-expanded u-image u-image-6"
-                style="background-image: url('../images/zdjcie-pokoju2.jpg');">
+                style="background-image: url('../images/zdjecie-pokoju2.webp');">
               </div>
             </div>
             <div class="u-container-layout u-similar-container u-container-layout-11">
@@ -923,7 +952,7 @@
         </div>
       </div>
       <a class="u-active-grey-5 u-border-3 u-border-black u-border-hover-palette-5-dark-3 u-btn u-button-style u-custom-font u-font-ubuntu u-hover-feature u-hover-palette-5-light-1 u-none u-radius u-text-black u-text-hover-palette-5-dark-2 u-btn-1"
-        data-page-id="196107113" href="galeria.html#sec-5be2" title="Galerie">
+        data-page-id="196107113" href="Galeria.html#sec-5be2" title="Galerie">
         MEHR FOTOS SEHEN
       </a>
       <h2 class="section-title h2-margin u-custom-font u-text-black">
@@ -950,7 +979,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-1"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Strand-Symbol" src="../images/Sonce1-f9eae810.png" />
+                          <img alt="Strand-Symbol" src="../images/slonce2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-7">
@@ -968,7 +997,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-2"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Einkaufswagen-Symbol" src="../images/wzek1-74bccfd4.png" />
+                          <img alt="Einkaufswagen-Symbol" src="../images/wozek2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-9">
@@ -992,7 +1021,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-3"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Fahrrad-Symbol" src="../images/Rower1-9fbfb26f.png" />
+                          <img alt="Fahrrad-Symbol" src="../images/Rower2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-11">
@@ -1010,7 +1039,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-4"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Gänse-Denkmal-Symbol" src="../images/Gska1-77f59c25.png" />
+                          <img alt="Gänse-Denkmal-Symbol" src="../images/gaska2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-13">
@@ -1028,7 +1057,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-5"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Leuchtturm-Symbol" src="../images/Latarnia1-80988080.png" />
+                          <img alt="Leuchtturm-Symbol" src="../images/Latarnia2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-15">
@@ -1046,7 +1075,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-6"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Promenade-Symbol" src="../images/Kapcie1-328a5eb2.png" />
+                          <img alt="Promenade-Symbol" src="../images/Kapcie2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-17">
@@ -1064,7 +1093,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-7"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Fisch-Symbol" src="../images/Ryba1-67cd01c4.png" />
+                          <img alt="Fisch-Symbol" src="../images/Ryba2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-19">
@@ -1082,7 +1111,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-8"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Hortulus-Gärten-Symbol" src="../images/Drzewo1-d08a423d.png" />
+                          <img alt="Hortulus-Gärten-Symbol" src="../images/Drzewo2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-21">
@@ -1100,7 +1129,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-9"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Mielno-Attraktionen-Symbol" src="../images/wesoemiasteczko1-007197ed.png" />
+                          <img alt="Mielno-Attraktionen-Symbol" src="../images/wesolemiasteczko2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-23">
@@ -1118,7 +1147,7 @@
                         <span class="u-align-left u-custom-item u-file-icon u-icon u-text-black u-icon-10"
                           data-animation-delay="0" data-animation-direction="" data-animation-duration="0"
                           data-animation-name="">
-                          <img alt="Hossoland-Achterbahn-Symbol" src="../images/rollercoaster1-ce4698ff.png" />
+                          <img alt="Hossoland-Achterbahn-Symbol" src="../images/rollercoaster2.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-25">
@@ -1137,456 +1166,155 @@
           </div>
         </div>
       </div>
+      <div style="width: 100%; border-bottom: 1px solid #333; margin: 40px 0;"></div>
     </div>
   </section>
-  <section class="u-clearfix u-white u-section-4" id="carousel_678b">
-    <div class="u-clearfix u-sheet u-valign-middle-md u-sheet-1">
-      <h2 class="section-title h2-margin u-custom-font u-text-black">
-        Mietpreisliste für Brokatowe Domki in Gąski
-      </h2>
-      <p class="u-align-justify u-text"
-        style="max-width: 900px; margin: 0 auto 30px; font-size: 1rem; line-height: 1.6; font-family: Ubuntu, sans-serif;">
-        Ganzjährig verfügbare Unterkunft zu attraktiven Preisen in der Sommer- und Wintersaison. Überprüfen Sie unsere
-        Preisliste
-        und buchen Sie noch heute Ihren Aufenthalt in den Brokatowe Domki.
-      </p>
-      <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div
-              class="u-container-style u-custom-color-6 u-layout-cell u-radius u-shape-round u-size-30 u-layout-cell-1">
-              <div
-                class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xl u-container-layout-1">
-                <div class="custom-expanded u-layout-grid u-list u-list-1">
-                  <div class="u-repeater u-repeater-1">
-                    <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
-                      <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                        <span class="u-align-left u-file-icon u-icon u-text-black u-icon-1">
-                          <img alt="Preisliste-Symbol" src="../images/4338295-038f51b9.png" />
-                        </span>
-                        <p class="u-custom-font u-text u-text-1">
-                          ​Preis pro ganzes Ferienhaus﻿
-                        </p>
-                        <p class="u-align-left u-custom-font u-font-ubuntu u-text u-text-2">
-                          ​​​
-                          <b>
-                            ​​​
-                          </b>
-                          <b>
-                            <br />
-                          </b>
-                          ​-
-                          from 250 PLN / Tag – Nebensaison.﻿
-                          <br />
-                          - im Sommer werden die Preise individuell festgelegt
-                          (abhängig vom
-                          Datum und der Aufenthaltsdauer)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
-                      <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                        <span class="u-align-left u-file-icon u-icon u-text-black u-icon-2">
-                          <img alt="Zusätzliche-Gebühren-Symbol" src="../images/4338295-038f51b9.png" />
-                        </span>
-                        <p class="u-custom-font u-text u-text-3">
-                          <span style="font-weight: 700;">
-                            ​
-                          </span>
-                          Zusätzliche
-                          Gebühren﻿
-                        </p>
-                        <p class="u-align-left u-custom-font u-font-ubuntu u-text u-text-4">
-                          <br />
-                          ​- Gebühr für einen
-                          Hund: 30 PLN
-                          / Tag.﻿
-                          <br />
-                          - Kurtaxe: 3,50 PLN / Person / Tag (gemäß Gemeindetarif).﻿
-                          <br />
-                          -
-                          Kaution: falls zutreffend, individuell festgelegt je nach Aufenthaltsdauer.﻿
-                        </p>
-                      </div>
-                    </div>
-                    <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
-                      <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
-                        <span class="u-align-left u-file-icon u-icon u-text-black u-icon-3">
-                          <img alt="Reservierung-Symbol" src="../images/4338295-038f51b9.png" />
-                        </span>
-                        <p class="u-custom-font u-text u-text-5">
-                          <span style="font-weight: 700;">
-                            ​
-                          </span>
-                          Reservierung﻿
-                        </p>
-                        <p class="u-align-left u-custom-font u-font-ubuntu u-text u-text-6">
-                          ​
-                          <br />
-                          ​- Die Reservierung
-                          wird
-                          durch eine Anzahlung von 30% bestätigt, zahlbar innerhalb von 24 Stunden nach Festlegung des
-                          Datums.﻿
-                          <br />
-                          - Die Anzahlung ist
-                          im Falle einer Stornierung nicht rückerstattungsfähig.﻿
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="u-container-style u-image u-image-round u-layout-cell u-radius u-shading u-size-30 u-image-1"
-              data-image-height="1920" data-image-width="1280"
-              style="background-image: linear-gradient(to bottom, rgba(41, 45, 51, 0.3), rgba(41, 45, 51, 0.3)), url('../images/Brokatowe-domki.jpg');">
-              <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-5">
-                <a class="u-active-grey-5 u-border-3 u-border-hover-palette-5-dark-2 u-border-white u-btn u-button-style u-custom-color-1 u-custom-font u-font-ubuntu u-hover-grey-5 u-radius u-text-hover-palette-5-dark-2 u-text-white u-btn-1"
-                  data-page-id="196107113" href="galeria.html#sec-c9e9" title="Galerie">
-                  ​HÄUSER ANSEHEN﻿
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <section
     class="u-align-center u-clearfix u-container-align-center u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-image u-section-5"
     data-image-height="2481" data-image-width="1749" id="sec-99d2"
-    style="background-image: url('../images/fale2-3.png');">
-    <div class="u-clearfix u-sheet u-valign-bottom-xs u-valign-middle-sm u-sheet-1">
-      <h6 class="u-align-center u-text u-text-default u-text-1">
-        Bewertungen
-      </h6>
-      <h2 class="u-align-center u-custom-font u-text u-text-2">
-        Gästebewertungen über Brokatowe Domki in Gąski
-        <br />
-      </h2>
-      <p class="u-align-justify u-text"
-        style="max-width: 900px; margin: 20px auto 30px; font-size: 1rem; line-height: 1.6; font-family: Ubuntu, sans-serif;">
-        Lesen Sie Bewertungen von glücklichen Familien, die einen unvergesslichen Urlaub am Meer in unseren
-        Ferienhäusern verbracht haben. Ihre Meinung ist
-        uns auch wichtig!
-      </p>
-      <div class="u-expanded-width u-list u-list-1">
-        <div class="u-repeater u-repeater-1">
-          <div
-            class="u-container-style u-list-item u-opacity u-opacity-70 u-radius u-repeater-item u-shape-round u-white u-list-item-1">
-            <div class="u-container-layout u-similar-container u-container-layout-1">
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-1">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-bf3f">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-bf3f" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-2">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-c8f2">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-c8f2" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-3">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-5148">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-5148" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-icon u-text-custom-color-3 u-icon-4">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-39ff">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-39ff" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-icon u-icon-rectangle u-text-custom-color-3 u-icon-5">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-5598">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-5598" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <h5 class="u-align-center u-custom-font u-text u-text-black u-text-default u-text-4">
-                ​​Anna
-              </h5>
-              <p class="u-align-center u-text u-text-grey-70 u-text-5">
-                <span class="u-icon u-icon-1">
-                </span>
-              </p>
-              <p class="u-align-justify u-custom-font u-font-ubuntu u-text u-text-6">
-                ​Das Ferienhaus war sauber,
-                duftende
-                Bettwäsche, Handtücher sehr weich, angenehm warm, die Küche so ausgestattet, dass nichts fehlte. Einfach
-                nichts
-                hinzuzufügen, nichts wegzunehmen.﻿
-              </p>
+    style="background-image: url('../images/fale2-3.webp');">
+    <div class="u-clearfix u-sheet u-valign-middle-sm u-sheet-1" style="min-height: auto; padding-bottom: 20px;">
+      <div class="container" style="text-align: center; margin-top: 40px; margin-bottom: 0px;">
+        <div class="reviews-carousel" style="position: relative; max-width: 1000px; margin: 0 auto; overflow: hidden;">
+          <div class="reviews-track" style="display: flex; transition: transform 0.5s ease-in-out;">
+            <!-- Review 1: Emilia -->
+            <div class="review-card" style="flex: 0 0 50%; box-sizing: border-box; padding: 10px;">
+              <div
+                style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; text-align: left; position: relative; overflow: hidden;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                  <span style="font-weight: bold; font-family: 'TheanoDidot-Regular1', serif;">Emilia</span>
+                  <span style="color: #003580; font-weight: bold;">10/10</span>
+                </div>
+                <p style="font-style: italic; color: #555; line-height: 1.6; font-family: 'Ubuntu', sans-serif;">
+                  "Sehr angenehme Gegend, ruhig und von viel Grün umgeben, ideal zur Entspannung. Es ist
+                  auch nah am Strand - ein kurzer Spaziergang und man ist da... Sehr guter Kontakt mit der
+                  Eigentümerin."</p>
+                <div
+                  style="position: absolute; bottom: 0px; right: 0px; font-size: 10rem; color: rgba(0,53,128,0.05); font-family: sans-serif; line-height: 0.6; pointer-events: none;">
+                  &rdquo;</div>
+              </div>
             </div>
-          </div>
-          <div
-            class="u-container-style u-list-item u-opacity u-opacity-70 u-radius u-repeater-item u-shape-round u-white u-list-item-2">
-            <div class="u-container-layout u-similar-container u-container-layout-2">
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-7">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-603d">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-603d" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-8">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-922f">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-922f" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-9">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-fcb8">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-fcb8" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-icon u-text-custom-color-3 u-icon-10">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-54a0">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-54a0" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-icon u-icon-rectangle u-text-custom-color-3 u-icon-11">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-b34d">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-b34d" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <h5 class="u-align-center u-custom-font u-text u-text-black u-text-default u-text-7">
-                ​​Błaszczyk
-              </h5>
-              <p class="u-align-center u-text u-text-grey-70 u-text-8">
-                <span class="u-icon u-icon-3">
-                </span>
-              </p>
-              <p class="u-align-justify u-custom-font u-font-ubuntu u-text u-text-9">
-                ​Das Ferienhaus ist sehr
-                freundlich,
-                sauber. Es ist 15 Minuten zu Fuß zum Strand. Der Strand ist sauber und weitläufig.﻿
-              </p>
+            <!-- Review 2: Monika4ever -->
+            <div class="review-card" style="flex: 0 0 50%; box-sizing: border-box; padding: 10px;">
+              <div
+                style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; text-align: left; position: relative; overflow: hidden;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                  <span style="font-weight: bold; font-family: 'TheanoDidot-Regular1', serif;">Monika4ever</span>
+                  <span style="color: #003580; font-weight: bold;">10/10</span>
+                </div>
+                <p style="font-style: italic; color: #555; line-height: 1.6; font-family: 'Ubuntu', sans-serif;">
+                  "Wunderbares Objekt, komfortabel, sogar die Treppe zum Obergeschoss war kein Problem...
+                  Freies Kochen, bequemer Essbereich, Küchenausstattung wie zu Hause...
+                  Sehr zu empfehlen!"</p>
+                <div
+                  style="position: absolute; bottom: 0px; right: 0px; font-size: 10rem; color: rgba(0,53,128,0.05); font-family: sans-serif; line-height: 0.6; pointer-events: none;">
+                  &rdquo;</div>
+              </div>
             </div>
-          </div>
-          <div
-            class="u-container-style u-list-item u-opacity u-opacity-70 u-radius u-repeater-item u-shape-round u-white u-list-item-3">
-            <div class="u-container-layout u-similar-container u-container-layout-3">
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-13">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-4eed">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-4eed" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-14">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-4903">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-4903" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-align-left u-icon u-text-custom-color-3 u-icon-15">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-2b95">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-2b95" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-icon u-text-custom-color-3 u-icon-16">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-9c0c">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-9c0c" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <span class="u-icon u-icon-rectangle u-text-custom-color-3 u-icon-17">
-                <svg class="u-svg-link" preserveaspectratio="xMidYMin slice" viewbox="0 0 49.94 49.94">
-                  <use xlink:href="#svg-8e3c">
-                  </use>
-                </svg>
-                <svg class="u-svg-content" id="svg-8e3c" style="enable-background:new 0 0 49.94 49.94;"
-                  viewbox="0 0 49.94 49.94" x="0px" y="0px">
-                  <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
-	c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
-	L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
-	c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
-	c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
-	l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
-	l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z">
-                  </path>
-                </svg>
-              </span>
-              <h5 class="u-align-center u-custom-font u-text u-text-black u-text-default u-text-10">
-                ​​Iryna
-              </h5>
-              <p class="u-align-center u-text u-text-grey-70 u-text-11">
-                <span class="u-icon u-icon-5">
-                </span>
-              </p>
-              <p class="u-align-justify u-custom-font u-font-ubuntu u-text u-text-12">
-                ​Sehr angenehme Gegend, ruhig und
-                von viel Grün umgeben, ideal zur Entspannung. Es ist auch nah am Strand – ein kurzer Spaziergang und man
-                ist
-                da. Der nächste Strand ist nicht überfüllt. Sehr guter Kontakt mit dem Eigentümer.﻿
-              </p>
+            <!-- Review 3: Anna -->
+            <div class="review-card" style="flex: 0 0 50%; box-sizing: border-box; padding: 10px;">
+              <div
+                style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; text-align: left; position: relative; overflow: hidden;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                  <span style="font-weight: bold; font-family: 'TheanoDidot-Regular1', serif;">Anna</span>
+                  <span style="color: #003580; font-weight: bold;">10/10</span>
+                </div>
+                <p style="font-style: italic; color: #555; line-height: 1.6; font-family: 'Ubuntu', sans-serif;">
+                  "Das Ferienhaus war sauber, duftende Bettwäsche, Handtücher sehr weich, angenehm warm, die Küche so
+                  ausgestattet, dass nichts fehlte. Einfach nichts hinzuzufügen, nichts wegzunehmen."</p>
+                <div
+                  style="position: absolute; bottom: 0px; right: 0px; font-size: 10rem; color: rgba(0,53,128,0.05); font-family: sans-serif; line-height: 0.6; pointer-events: none;">
+                  &rdquo;</div>
+              </div>
+            </div>
+            <!-- Review 4: Błaszczyk -->
+            <div class="review-card" style="flex: 0 0 50%; box-sizing: border-box; padding: 10px;">
+              <div
+                style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; text-align: left; position: relative; overflow: hidden;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                  <span style="font-weight: bold; font-family: 'TheanoDidot-Regular1', serif;">Błaszczyk</span>
+                  <span style="color: #003580; font-weight: bold;">10/10</span>
+                </div>
+                <p style="font-style: italic; color: #555; line-height: 1.6; font-family: 'Ubuntu', sans-serif;">
+                  "Das Ferienhaus ist sehr freundlich, sauber. Es sind 15 Minuten zu Fuß zum Strand. Der Strand ist
+                  sauber und
+                  weitläufig."</p>
+                <div
+                  style="position: absolute; bottom: 0px; right: 0px; font-size: 10rem; color: rgba(0,53,128,0.05); font-family: sans-serif; line-height: 0.6; pointer-events: none;">
+                  &rdquo;</div>
+              </div>
+            </div>
+            <!-- Review 5: Iryna -->
+            <div class="review-card" style="flex: 0 0 50%; box-sizing: border-box; padding: 10px;">
+              <div
+                style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; text-align: left; position: relative; overflow: hidden;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                  <span style="font-weight: bold; font-family: 'TheanoDidot-Regular1', serif;">Iryna</span>
+                  <span style="color: #003580; font-weight: bold;">10/10</span>
+                </div>
+                <p style="font-style: italic; color: #555; line-height: 1.6; font-family: 'Ubuntu', sans-serif;">
+                  "Sehr gepflegte Gegend, gemütliches Haus. Wir wurden von der netten Hausherrin begrüßt. Sehr zu
+                  empfehlen."</p>
+                <div
+                  style="position: absolute; bottom: 0px; right: 0px; font-size: 10rem; color: rgba(0,53,128,0.05); font-family: sans-serif; line-height: 0.6; pointer-events: none;">
+                  &rdquo;</div>
+              </div>
             </div>
           </div>
         </div>
+
+        <p
+          style="font-size: 0.75rem; color: #888; margin-top: 10px; font-style: italic; position: relative; z-index: 2;">
+          Bewertungen aus Booking.com
+        </p>
       </div>
+      <style>
+        @media (max-width: 768px) {
+          .review-card {
+            flex: 0 0 100% !important;
+          }
+        }
+      </style>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const track = document.querySelector('.reviews-track');
+          const cards = document.querySelectorAll('.review-card');
+          let currentIndex = 0;
+
+          function getCardsPerView() {
+            return window.innerWidth <= 768 ? 1 : 2;
+          }
+
+          function moveCarousel() {
+            currentIndex++;
+            const cardsPerView = getCardsPerView();
+            const maxIndex = cards.length - cardsPerView;
+
+            if (currentIndex > maxIndex) {
+              currentIndex = 0;
+            }
+
+            // Each card is 100% / cardsPerView width
+            // So we translate by currentIndex * (100 / cardsPerView)
+            const width = 100 / cardsPerView;
+            track.style.transform = `translateX(-${currentIndex * width}%)`;
+          }
+
+          setInterval(moveCarousel, 4000);
+
+          // Handle resize to reset position and avoid visual bugs
+          window.addEventListener('resize', () => {
+            currentIndex = 0;
+            track.style.transform = `translateX(0)`;
+          });
+        });
+      </script>
     </div>
   </section>
+
   <section class="u-clearfix u-image u-section-6" data-image-height="2481" data-image-width="1749" id="sec-e76e"
-    style="background-image: url('../images/fale2-3.png');">
+    style="background-image: url('../images/fale2-3.webp');">
     <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
       <div class="reservation-header-container">
         <h2 class="u-align-center u-custom-font u-text u-text-1">
@@ -1612,396 +1340,590 @@
           Mit dem Absenden des Formulars stimmen Sie der Verarbeitung Ihrer persönlichen Daten zur Bearbeitung der
           Anfrage zu. Mehr dazu in der
           <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-text-hover-custom-color-4 u-btn-1"
-            data-page-id="844820196" href="polityka-prywatnosci.html" title="Privacy Policy">
+            data-page-id="844820196" href="Polityka-Prywatności.html" title="Privacy Policy">
             Datenschutzerklärung.
           </a>
         </p>
+        <p class="u-align-justify u-text"
+          style="max-width: 900px; margin: 30px auto 40px; font-size: 1rem; line-height: 1.6; font-family: Ubuntu, sans-serif;">
+          <span style="font-weight: 700;">An- und Abreise:</span><br>
+          – Anreise: von 16:00 bis 20:00 Uhr<br>
+          – Abreise: bis 10:00 Uhr
+        </p>
       </div>
-      <div style="max-width: 500px; margin: 0 auto; padding: 20px 15px;">
-        <div style="background: rgba(255, 255, 255, 0.7); padding: 30px; border-radius: 30px;">
-          <div
-            class="b3 background-color button custom-expanded divstylegrid-template-columns flex form fr grid-template-columns hover important label left max-width media px style text-align u-clearfix u-custom-color-1 u-custom-html u-expanded-width-md u-expanded-width-sm u-custom-html-1">
-            <form action="https://formsubmit.co/edzia1703@o2.pl" class="custom-form" method="POST">
-              <input name="_subject" type="hidden" value="NOWE ZAPYTANIE O REZERWACJE W BROKATOWYCH DOMKACH" />
-              <input name="_captcha" type="hidden" value="false" />
-              <input name="_next" type="hidden" value="https://brokatowedomki.pl/de/?sent=yes" />
-              <label class="u-label" for="name-6797">
-                Vor- und Nachname
-              </label>
-              <input class="u-input u-input-rectangle" id="name-6797" name="Imię i Nazwisko"
-                placeholder="Geben Sie Ihren Namen ein" required="" type="text" />
-              <label class="u-label" for="email-6797">
-                E-Mail-Adresse
-              </label>
-              <input class="u-input u-input-rectangle" id="email-6797" name="Email"
-                placeholder="Geben Sie eine gültige E-Mail-Adresse ein" required="" type="email" />
-              <label for="phone">
-                Telefon*
-              </label>
-              <div class="phone-row">
-                <select id="country-code" name="Kierunkowy" required="">
-                  <option value="+355">
-                    🇦🇱 Albanien (+355)
-                  </option>
-                  <option value="+376">
-                    🇦🇩 Andorra (+376)
-                  </option>
-                  <option value="+994">
-                    🇦🇿 Aserbaidschan (+994)
-                  </option>
-                  <option value="+374">
-                    🇦🇲 Armenien (+374)
-                  </option>
-                  <option value="+43">
-                    🇦🇹 Österreich (+43)
-                  </option>
-                  <option value="+375">
-                    🇧🇾 Weißrussland (+375)
-                  </option>
-                  <option value="+387">
-                    🇧🇦 Bosnien und Herzegowina (+387)
-                  </option>
-                  <option value="+359">
-                    🇧🇬 Bulgarien (+359)
-                  </option>
-                  <option value="+357">
-                    🇨🇾 Zypern (+357)
-                  </option>
-                  <option value="+420">
-                    🇨🇿 Tschechische Republik (+420)
-                  </option>
-                  <option value="+45">
-                    🇩🇰 Dänemark (+45)
-                  </option>
-                  <option value="+372">
-                    🇪🇪 Estland (+372)
-                  </option>
-                  <option value="+358">
-                    🇫🇮 Finnland (+358)
-                  </option>
-                  <option value="+33">
-                    🇫🇷 Frankreich (+33)
-                  </option>
-                  <option value="+995">
-                    🇬🇪 Georgien (+995)
-                  </option>
-                  <option value="+44">
-                    🇬🇧 Großbritannien (+44)
-                  </option>
-                  <option value="+30">
-                    🇬🇷 Griechenland (+30)
-                  </option>
-                  <option value="+31">
-                    🇳🇱 Niederlande (+31)
-                  </option>
-                  <option value="+36">
-                    🇭🇺 Ungarn (+36)
-                  </option>
-                  <option value="+353">
-                    🇮🇪 Irland (+353)
-                  </option>
-                  <option value="+354">
-                    🇮🇸 Island (+354)
-                  </option>
-                  <option value="+39">
-                    🇮🇹 Italien (+39)
-                  </option>
-                  <option value="+383">
-                    🇽🇰 Kosovo (+383)
-                  </option>
-                  <option value="+371">
-                    🇱🇻 Lettland (+371)
-                  </option>
-                  <option value="+423">
-                    🇱🇮 Liechtenstein (+423)
-                  </option>
-                  <option value="+370">
-                    🇱🇹 Litauen (+370)
-                  </option>
-                  <option value="+352">
-                    🇱🇺 Luxemburg (+352)
-                  </option>
-                  <option value="+356">
-                    🇲🇹 Malta (+356)
-                  </option>
-                  <option value="+373">
-                    🇲🇩 Moldawien (+373)
-                  </option>
-                  <option value="+377">
-                    🇲🇨 Monaco (+377)
-                  </option>
-                  <option value="+382">
-                    🇲🇪 Montenegro (+382)
-                  </option>
-                  <option selected="" value="+49">
-                    🇩🇪 Deutschland (+49)
-                  </option>
-                  <option value="+47">
-                    🇳🇴 Norwegen (+47)
-                  </option>
-                  <option value="+48">
-                    🇵🇱 Polen (+48)
-                  </option>
-                  <option value="+351">
-                    🇵🇹 Portugal (+351)
-                  </option>
-                  <option value="+40">
-                    🇷🇴 Rumänien (+40)
-                  </option>
-                  <option value="+381">
-                    🇷🇸 Serbien (+381)
-                  </option>
-                  <option value="+378">
-                    🇸🇲 San Marino (+378)
-                  </option>
-                  <option value="+421">
-                    🇸🇰 Slowakei (+421)
-                  </option>
-                  <option value="+386">
-                    🇸🇮 Slowenien (+386)
-                  </option>
-                  <option value="+46">
-                    🇸🇪 Schweden (+46)
-                  </option>
-                  <option value="+41">
-                    🇨🇭 Schweiz (+41)
-                  </option>
-                  <option value="+380">
-                    🇺🇦 Ukraine (+380)
-                  </option>
-                  <option value="+34">
-                    🇪🇸 Spanien (+34)
-                  </option>
-                  <option value="+40">
-                    🇷🇴 Rumänien (+40)
-                  </option>
-                  <option value="+36">
-                    🇭🇺 Ungarn (+36)
-                  </option>
-                  <input id="phone" name="Telefon" placeholder="600 123 456" required="" type="tel" />
-                </select>
-              </div>
-              <label class="u-label" for="date-eadd">
-                Anreisedatum
-              </label>
-              <input class="u-input u-input-rectangle" id="date-eadd" name="Data Przyjazdu" placeholder="MM/DD/YYYY"
-                required="" type="date" />
-              <label class="u-label" for="departure-date">
-                Abreisedatum
-              </label>
-              <input class="u-input u-input-rectangle" id="departure-date" name="Data Odjazdu" placeholder="MM/DD/YYYY"
-                required="" type="date" />
-              <label for="guests">
-                Anzahl der Gäste (max. 8 Personen)*
-              </label>
-              <input id="guests" max="8" min="1" name="Liczba osób" placeholder="Geben Sie die Anzahl der Gäste ein"
-                required="" type="number" />
-              <div class="checkbox-wrapper">
-                <input id="pet" name="Zwierzęta" type="checkbox" />
-                <label for="pet">
-                  Haustiere
-                </label>
-              </div>
-              <label class="u-label" for="message-6797">
-                Nachricht (optional)
-              </label>
-              <textarea class="u-input u-input-rectangle" cols="50" id="message-6797" name="Wiadomość"
-                placeholder="Geben Sie Ihre Nachricht ein" rows="4"></textarea>
-              <div class="checkbox-wrapper">
-                <input id="rules" name="Zaakceptowanie Regulaminu" required="" type="checkbox" />
-                <label for="rules">
-                  Ich habe die
-                  <a href="regulamin.html" target="_blank">
-                    Allgemeinen
-                    Geschäftsbedingungen
-                  </a>
-                  gelesen und stimme ihnen zu*
-                </label>
-              </div>
-              <button type="submit">
-                ANFRAGE SENDEN
-              </button>
-            </form>
-            <style>
-              .custom-form {
-                max-width: 100%;
-                margin: auto;
-                font-family: 'fubuntu', sans-serif;
-                font-size: 14px;
+      <div class="custom-form-container">
+        <form action="https://formsubmit.co/edzia1703@o2.pl" class="custom-form" method="POST" id="reservationForm">
+          <input name="_subject" type="hidden" value="NOWE ZAPYTANIE O REZERWACJE W BROKATOWYCH DOMKACH" />
+          <input name="_captcha" type="hidden" value="false" />
+          <input name="_next" type="hidden" value="https://brokatowedomki.pl/de/?status=success" />
 
-                /* Kontener telefonu */
-                .phone-row {
-                  display: flex;
-                  gap: 10px;
-                  width: 100%;
-                  margin-top: 4px;
-                }
-
-                /* Select kierunkowy */
-                .phone-row select {
-                  width: 140px;
-                  border-radius: 4px;
-                  padding: 10px;
-                  background: #fff;
-                  cursor: pointer;
-                  margin-top: 4px;
-                  /* niewielki odstęp od label */
-                  border: 1px solid #ccc;
-                }
-
-                /* Pole numeru */
-                .phone-row input {
-                  flex: 1;
-                }
-              }
-
-              /* Reset marginesów/paddingów */
-              .custom-form * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-              }
-
-              /* Odstępy między label a input */
-              .custom-form label {
-                display: block;
-                font-weight: 600;
-                margin-top: 12px;
-                /* kontrolowany odstęp */
-              }
-
-              /* Wygląd input/textarea */
-              .custom-form input[type="text"],
-              .custom-form input[type="email"],
-              .custom-form input[type="tel"],
-              .custom-form input[type="date"],
-              .custom-form input[type="number"],
-              .custom-form textarea {
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                display: block;
-                margin-top: 4px;
-                /* niewielki odstęp od label */
-              }
-
-              /* Checkboxy w linii */
-              .checkbox-wrapper {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                margin-top: 12px;
-              }
-
-              /* Skalowanie checkbox */
-              .checkbox-wrapper input[type="checkbox"] {
-                transform: scale(1.2);
-              }
-
-              /* Przycisk */
-              .custom-form button {
-                margin-top: 20px;
-                width: 100%;
-                background-color: #007BFF;
-                color: #fff;
-                font-weight: 700;
-                font-size: 15px;
-                padding: 14px;
-                border: none;
-                border-radius: 8px;
-                cursor: pointer;
-                transition: 0.3s;
-              }
-
-              .custom-form button:hover {
-                background-color: #0056b3;
-              }
-            </style>
-            <style>
-              /* Mobile centering for form */
-              @media (max-width: 575px) {
-                .custom-form {
-                  max-width: 100%;
-                  margin-left: auto;
-                  margin-right: auto;
-                  padding-left: 15px;
-                  padding-right: 15px;
-                }
-
-                .custom-form .phone-row {
-                  flex-wrap: wrap;
-                }
-
-                .custom-form .phone-row select,
-                .custom-form .phone-row input {
-                  width: 100%;
-                  margin-top: 4px;
-                }
-
-                .custom-form .phone-row select {
-                  width: 100%;
-                }
-              }
-            </style>
+          <!-- Row 1: Name and Email -->
+          <div class="form-row">
+            <div class="input-group">
+              <input id="name" name="Imię i Nazwisko" placeholder=" " required="" type="text" />
+              <label for="name">Vor- und Nachname*</label>
+            </div>
+            <div class="input-group">
+              <input id="email" name="Email" placeholder=" " required="" type="email" />
+              <label for="email">E-Mail-Adresse*</label>
+            </div>
           </div>
-        </div>
+
+          <!-- Row 2: Phone and Guests -->
+          <div class="form-row">
+            <div class="input-group phone-group">
+              <label class="static-label">Telefon*</label>
+              <div class="phone-inputs">
+                <select id="country-code" name="Kierunkowy" required="">
+                  <option value="+355">🇦🇱 (+355)</option>
+                  <option value="+376">🇦🇩 (+376)</option>
+                  <option value="+994">🇦🇿 (+994)</option>
+                  <option value="+374">🇦🇲 (+374)</option>
+                  <option value="+43">🇦🇹 (+43)</option>
+                  <option value="+375">🇧🇾 (+375)</option>
+                  <option value="+387">🇧🇦 (+387)</option>
+                  <option value="+359">🇧🇬 (+359)</option>
+                  <option value="+357">🇨🇾 (+357)</option>
+                  <option value="+420">🇨🇿 (+420)</option>
+                  <option value="+45">🇩🇰 (+45)</option>
+                  <option value="+372">🇪🇪 (+372)</option>
+                  <option value="+358">🇫🇮 (+358)</option>
+                  <option value="+33">🇫🇷 (+33)</option>
+                  <option value="+995">🇬🇪 (+995)</option>
+                  <option value="+44">🇬🇧 (+44)</option>
+                  <option value="+30">🇬🇷 (+30)</option>
+                  <option value="+31">🇳🇱 (+31)</option>
+                  <option value="+36">🇭🇺 (+36)</option>
+                  <option value="+353">🇮🇪 (+353)</option>
+                  <option value="+354">🇮🇸 (+354)</option>
+                  <option value="+39">🇮🇹 (+39)</option>
+                  <option value="+383">🇽🇰 (+383)</option>
+                  <option value="+371">🇱🇻 (+371)</option>
+                  <option value="+423">🇱🇮 (+423)</option>
+                  <option value="+370">🇱🇹 (+370)</option>
+                  <option value="+352">🇱🇺 (+352)</option>
+                  <option value="+356">🇲🇹 (+356)</option>
+                  <option value="+373">🇲🇩 (+373)</option>
+                  <option value="+377">🇲🇨 (+377)</option>
+                  <option value="+382">🇲🇪 (+382)</option>
+                  <option selected="" value="+49">🇩🇪 (+49)</option>
+                  <option value="+47">🇳🇴 (+47)</option>
+                  <option value="+48">🇵🇱 (+48)</option>
+                  <option value="+351">🇵🇹 (+351)</option>
+                  <option value="+40">🇷🇴 (+40)</option>
+                  <option value="+381">🇷🇸 (+381)</option>
+                  <option value="+378">🇸🇲 (+378)</option>
+                  <option value="+421">🇸🇰 (+421)</option>
+                  <option value="+386">🇸🇮 (+386)</option>
+                  <option value="+46">🇸🇪 (+46)</option>
+                  <option value="+41">🇨🇭 (+41)</option>
+                  <option value="+380">🇺🇦 (+380)</option>
+                  <option value="+34">🇪🇸 (+34)</option>
+                </select>
+                <input id="phone" name="Telefon" placeholder="600 123 456" required="" type="tel" />
+              </div>
+            </div>
+
+            <div class="input-group guest-group">
+              <label class="static-label">Anzahl der Gäste (max. 8)*</label>
+              <div class="guest-counter">
+                <button type="button" class="counter-btn" id="guest-minus">-</button>
+                <input id="guests" max="8" min="1" name="Liczba osób" value="4" readonly required="" type="number" />
+                <button type="button" class="counter-btn" id="guest-plus">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3: Date Range -->
+          <div class="form-row">
+            <div class="input-group full-width">
+              <input id="date-range" class="flatpickr-input" type="text" placeholder=" " required=""
+                readonly="readonly">
+              <label for="date-range">Reisedaten wählen*</label>
+              <!-- Hidden inputs for backend -->
+              <input type="hidden" id="arrival" name="Data przyjazdu">
+              <input type="hidden" id="departure" name="Data odjazdu">
+            </div>
+          </div>
+
+          <!-- Row 4: Pet Checkbox (Full Width) -->
+          <div class="checkbox-wrapper">
+            <input id="pet" name="Zwierzę" type="checkbox" />
+            <label for="pet">Ich reise mit einem Haustier 🐾</label>
+          </div>
+
+          <!-- Row 5: Message -->
+          <div class="input-group full-width" style="margin-top: 15px;">
+            <textarea id="message" name="Wiadomość" rows="3" placeholder=" "></textarea>
+            <label for="message">Nachricht (optional)</label>
+          </div>
+
+          <!-- Row 6: Rules Checkbox -->
+          <div class="checkbox-wrapper">
+            <input id="rules" name="Zaakceptowanie Regulaminu" required="" type="checkbox" />
+            <label for="rules" style="font-size: 0.9rem;">
+              Ich habe die
+              <a href="Regulamin.html" target="_blank" style="text-decoration: underline;">Allgemeinen
+                Geschäftsbedingungen</a>
+              gelesen und stimme ihnen zu*
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn" id="submitBtn">
+            Verfügbarkeit prüfen und buchen
+          </button>
+        </form>
       </div>
+
+      <style>
+        /* --- Form Container & Typography --- */
+        .custom-form-container {
+          background: transparent;
+          padding: 15px;
+          border-radius: 20px;
+          box-shadow: none;
+          width: 100%;
+          max-width: 900px;
+          margin: 5px auto 60px;
+        }
+
+        @media (min-width: 992px) {
+          .custom-form-container {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        .custom-form {
+          width: 100%;
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          /* Vertical gap between rows */
+        }
+
+        /* --- Grid Layout --- */
+        .form-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          /* Horizontal gap between columns */
+        }
+
+        .full-width {
+          grid-column: span 2;
+          width: 100%;
+        }
+
+        /* --- Input Groups & Floating Labels --- */
+        .input-group {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+        }
+
+        /* Base style for inputs */
+        .custom-form input[type="text"],
+        .custom-form input[type="email"],
+        .custom-form input[type="tel"],
+        .custom-form input[type="number"],
+        .custom-form input[type="date"],
+        .custom-form select,
+        .custom-form textarea,
+        #date-range {
+          width: 100%;
+          padding: 12px 15px;
+          border: 1px solid #e0e0e0;
+          border-radius: 12px;
+          /* Modern rounded corners */
+          background: #f9f9f9;
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 1rem;
+          color: #333;
+          transition: all 0.3s ease;
+          outline: none;
+          margin-top: 0;
+          /* Remove old margins */
+        }
+
+        /* Focus state */
+        .custom-form input:focus,
+        .custom-form select:focus,
+        .custom-form textarea:focus,
+        #date-range:focus {
+          border-color: #007BFF;
+          /* Brand color */
+          background: #fff;
+          box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+          /* Subtle shadow on focus */
+        }
+
+        /* Floating Label Logic */
+        .input-group label:not(.static-label) {
+          position: absolute;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: transparent;
+          padding: 0 5px;
+          color: #888;
+          font-size: 0.95rem;
+          pointer-events: none;
+          transition: all 0.2s ease;
+        }
+
+        .input-group textarea+label {
+          top: 20px;
+          /* Adjust for textarea */
+          transform: none;
+        }
+
+        /* Move label up when input has focus or value */
+        .input-group input:focus+label,
+        .input-group input:not(:placeholder-shown)+label,
+        .input-group textarea:focus+label,
+        .input-group textarea:not(:placeholder-shown)+label {
+          top: -8px;
+          left: 10px;
+          font-size: 0.75rem;
+          color: #007BFF;
+          background: #fff;
+          font-weight: 600;
+          transform: none;
+          padding: 0 5px;
+          border-radius: 4px;
+        }
+
+        /* Static Labels (Phone & Guests where structure is complex) */
+        .static-label {
+          font-size: 0.85rem;
+          color: #666;
+          margin-bottom: 5px;
+          font-weight: 600;
+          margin-left: 5px;
+        }
+
+        /* --- Phone Inputs --- */
+        .phone-inputs {
+          display: flex;
+          gap: 10px;
+        }
+
+        .phone-inputs select {
+          width: 110px;
+          padding: 12px 5px;
+          text-align: center;
+        }
+
+        /* --- Guest Counter --- */
+        .guest-counter {
+          display: flex;
+          align-items: center;
+          background: #f9f9f9;
+          border: 1px solid #e0e0e0;
+          border-radius: 12px;
+          overflow: hidden;
+        }
+
+        .counter-btn {
+          width: 45px;
+          height: 45px;
+          background: #fff;
+          border: none;
+          font-size: 1.5rem;
+          color: #007BFF;
+          cursor: pointer;
+          transition: background 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .counter-btn:hover {
+          background: #ecf5ff;
+        }
+
+        #guests {
+          flex: 1;
+          text-align: center;
+          border: none !important;
+          background: transparent !important;
+          box-shadow: none !important;
+          padding: 0;
+          margin: 0;
+          font-weight: 700;
+          color: #333;
+          -moz-appearance: textfield;
+          /* Hide arrows firefox */
+          appearance: textfield;
+          /* Standard */
+        }
+
+        #guests::-webkit-outer-spin-button,
+        #guests::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* --- Details (Textarea) --- */
+        .custom-form textarea {
+          min-height: 80px;
+          resize: vertical;
+        }
+
+        /* --- Checkboxes --- */
+        .checkbox-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 5px;
+        }
+
+        .checkbox-wrapper input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          accent-color: #007BFF;
+          margin: 0;
+        }
+
+        .checkbox-wrapper label {
+          cursor: pointer;
+          font-size: 0.95rem;
+          color: #555;
+          user-select: none;
+        }
+
+        /* --- Submit Button --- */
+        .submit-btn {
+          background: #007BFF;
+          color: #fff;
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 1.1rem;
+          font-weight: 700;
+          padding: 16px;
+          border: none;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: transform 0.1s, box-shadow 0.2s, background 0.2s;
+          box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+          margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+          background: #0062cc;
+          box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+          transform: translateY(-1px);
+        }
+
+        .submit-btn:active {
+          transform: translateY(1px);
+        }
+
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 991px) {
+          .form-row {
+            grid-template-columns: 1fr;
+            /* Stack columns */
+            gap: 15px;
+          }
+
+          .full-width {
+            grid-column: span 1;
+          }
+
+          .custom-form-container {
+            padding: 20px;
+          }
+
+          /* Aggressive spacing fix for mobile */
+          .u-section-6 {
+            padding-top: 0 !important;
+            min-height: auto !important;
+          }
+
+          .u-section-6 .u-sheet-1 {
+            min-height: auto !important;
+            margin-top: 0 !important;
+            justify-content: flex-start !important;
+          }
+
+          /* Force the header container to be close to the top */
+          .reservation-header-container {
+            margin-top: 0 !important;
+            padding-top: 20px !important;
+          }
+        }
+      </style>
+
+      <!-- Flatpickr JS -->
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script src="https://npmcdn.com/flatpickr/dist/l10n/de.js"></script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Initialize German Locale
+          flatpickr.localize(flatpickr.l10ns.de);
+
+          // 1. Initialize Flatpickr (Date Range)
+          const datePicker = flatpickr("#date-range", {
+            mode: "range",
+            minDate: "today",
+            maxDate: new Date().fp_incr(365), // Limit to 365 days from today
+            dateFormat: "Y-m-d",
+            disableMobile: "true",
+            onChange: function (selectedDates, dateStr, instance) {
+              if (selectedDates.length === 2) {
+                const startDate = instance.formatDate(selectedDates[0], "Y-m-d");
+                const endDate = instance.formatDate(selectedDates[1], "Y-m-d");
+                document.getElementById('arrival').value = startDate;
+                document.getElementById('departure').value = endDate;
+              } else {
+                document.getElementById('arrival').value = "";
+                document.getElementById('departure').value = "";
+              }
+            }
+          });
+
+
+          // 2. Guest Counter Logic
+          const guestInput = document.getElementById('guests');
+          const btnMinus = document.getElementById('guest-minus');
+          const btnPlus = document.getElementById('guest-plus');
+
+          btnMinus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val > 1) guestInput.value = val - 1;
+          });
+
+          btnPlus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val < 8) guestInput.value = val + 1;
+          });
+
+          // 3. Hidden Phone Full Input (Concatenation Logic)
+          const phoneInput = document.getElementById('phone');
+          const countrySelect = document.getElementById('country-code');
+          const fullPhoneInput = document.getElementById('full-phone');
+
+          function updateFullPhone() {
+            if (fullPhoneInput) {
+              fullPhoneInput.value = `${countrySelect.value} ${phoneInput.value}`;
+            }
+          }
+
+          phoneInput.addEventListener("input", function () {
+            updateFullPhone();
+          });
+
+          countrySelect.addEventListener("change", updateFullPhone);
+
+          // Initial update
+          updateFullPhone();
+
+          // Legacy submit listener removed as we are updating in real-time
+        });
+      </script>
     </div>
   </section>
-  <section class="u-clearfix u-section-7" id="block-2">
-    <div
-      class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-    </div>
-  </section>
-  <section class="u-clearfix u-section-8" id="block-3">
-    <div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-sm u-sheet-1">
-      <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">
-        <style>
+  <section class="u-clearfix u-section-8" id="block-3"
+    style="width: 100% !important; margin: 0 !important; padding: 0 !important; overflow: hidden;">
+    <div style="width: 100%; padding: 0; margin: 0;">
+      <style>
+        .map-wrapper {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          border-radius: 0;
+          /* Remove border radius */
+        }
+
+        /* Pulsing Click Animation */
+        .map-pulse {
+          position: absolute;
+          top: 30px;
+          /* Adjusted to center over typical map controls */
+          left: 30px;
+          z-index: 10;
+          pointer-events: none;
+        }
+
+        /* The clicking finger/center - REMOVED */
+        .map-pulse::before {
+          content: none;
+        }
+
+        /* The expanding ripple */
+        .map-pulse::after {
+          content: '';
+          position: absolute;
+          transform: translate(-50%, -50%);
+          width: 20px;
+          height: 20px;
+          border: 2px solid rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+          animation: pulseRipple 2s infinite;
+        }
+
+        @keyframes pulseRipple {
+          0% {
+            width: 20px;
+            height: 20px;
+            opacity: 1;
+            border-width: 2px;
+          }
+
+          100% {
+            width: 80px;
+            height: 80px;
+            opacity: 0;
+            border-width: 0px;
+          }
+        }
+
+        /* DUŻE EKRANY – klasyczny 16:9 */
+        @media (min-width: 721px) {
           .map-wrapper {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 12px;
+            height: calc(100vw * 0.56);
+            /* 16:9 */
+            max-height: 500px;
           }
+        }
 
-          /* DUŻE EKRANY – klasyczny 16:9 */
-          @media (min-width: 721px) {
-            .map-wrapper {
-              height: calc(100vw * 0.56);
-              /* 16:9 */
-              max-height: 500px;
-            }
+        /* TELEFONY – pionowa mapa, bez odstępów */
+        @media (max-width: 720px) {
+          .map-wrapper {
+            height: 550px;
+            /* pionowa wysokość */
           }
+        }
 
-          /* TELEFONY – pionowa mapa, bez odstępów */
-          @media (max-width: 720px) {
-            .map-wrapper {
-              height: 550px;
-              /* pionowa wysokość */
-            }
+        @media (max-width: 450px) {
+          .map-wrapper {
+            height: 600px;
+            /* trochę wyżej na małych ekranach */
           }
+        }
 
-          @media (max-width: 450px) {
-            .map-wrapper {
-              height: 600px;
-              /* trochę wyżej na małych ekranach */
-            }
+        @media (max-width: 360px) {
+          .map-wrapper {
+            height: 650px;
+            /* bardzo małe telefony */
           }
-
-          @media (max-width: 360px) {
-            .map-wrapper {
-              height: 650px;
-              /* bardzo małe telefony */
-            }
-          }
-        </style>
-        <div class="map-wrapper">
-          <iframe allowfullscreen=""
-            src="https://www.google.com/maps/d/u/0/embed?mid=1UQaxgvXido2CSJzSWH7QtdvvIyuIyjY&amp;ehbc=2E312F&amp;noprof=1"
-            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;">
-          </iframe>
-        </div>
+        }
+      </style>
+      <div class="map-wrapper">
+        <iframe allowfullscreen=""
+          src="https://www.google.com/maps/d/u/0/embed?mid=1UQaxgvXido2CSJzSWH7QtdvvIyuIyjY&amp;ehbc=2E312F&amp;noprof=1"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;">
+        </iframe>
+        <!-- Visual Click Animation -->
+        <div class="map-pulse"></div>
       </div>
     </div>
   </section>
@@ -2080,27 +2002,32 @@
                     Booking
                   </a>
                   <br />
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-custom-color-4 u-text-white u-btn-3"
+                    data-lang-de='{"content":"Preisliste","href":"cennik.html"}'
+                    data-lang-pl='{"content":"Cennik","href":"../cennik.html"}'
+                    data-lang-en='{"content":"Price List","href":"../en/cennik.html"}' href="cennik.html"
+                    style="background-image: none; padding: 0px; text-decoration: underline !important;">Preisliste</a><br />
                   <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-custom-color-4 u-text-white u-btn-4"
                     data-lang-pl='{"content":"Galeria","href":"196107113#sec-c9e9"}' data-page-id="196107113"
-                    href="galeria.html#sec-c9e9">
+                    href="Galeria.html#sec-c9e9">
                     Galerie
                   </a>
                   <br />
                   <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-custom-color-4 u-text-white u-btn-5"
                     data-lang-pl='{"content":"Kontakt","href":"81828424#sec-f8e2"}' data-page-id="81828424"
-                    href="kontakt.html#sec-f8e2">
+                    href="Kontakt.html#sec-f8e2">
                     Kontakt
                   </a>
                   <br />
                   <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-text-hover-custom-color-4 u-btn-6"
                     data-lang-pl='{"content":"Regulamin","href":"44140244#block-2"}' data-page-id="44140244"
-                    href="regulamin.html#block-2">
+                    href="Regulamin.html#block-2">
                     AGB
                   </a>
                   <br />
                   <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-custom-color-4 u-text-white u-btn-7"
                     data-lang-pl='{"content":"Polityka Prywatności","href":"844820196#block-1"}'
-                    data-page-id="844820196" href="polityka-prywatnosci.html#block-1">
+                    data-page-id="844820196" href="Polityka-Prywatności.html#block-1">
                     Datenschutzerklärung
                   </a>
                 </p>
@@ -2128,6 +2055,10 @@
                     href="https://www.booking.com/hotel/pl/brokatowe-domki.pl.html?aid=2311236&amp;label=pl-pl-booking-desktop-_daRgHoAMAxzZxKo2583uAS652829001079%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1011521%3Ali%3Adec%3Adm&amp;sid=4a49fd6650424575acc91ffec0f2647a&amp;dest_id=-501335&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1763139423&amp;srpvid=97a96d483cbd0160&amp;type=total&amp;ucfs=1&amp;"
                     target="_blank">
                     booking.com
+                  </a><br>
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-text-hover-custom-color-4 u-btn-8"
+                    href="#" target="_blank" style="padding-left: 0;">
+                    Airbnb
                   </a>
                 </p>
               </div>
@@ -2146,6 +2077,7 @@
         ❮
       </span>
     </div>
+
     <div class="sidebar-content">
       <h3 class="sidebar-title">
         Kontakt
@@ -2163,6 +2095,12 @@
           📅
         </span>
         Booking.com
+      </a>
+      <a class="sidebar-link" href="#" target="_blank">
+        <span class="sidebar-icon">
+          🏡
+        </span>
+        Airbnb
       </a>
       <a class="sidebar-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=54.2379489,15.9005971"
         target="_blank">
@@ -2194,6 +2132,369 @@
         arrow.textContent = '❮';
       }
     }
+  </script>
+
+  <!-- FACEBOOK SIDEBAR -->
+  <div class="fb-sidebar" id="fb-sidebar">
+    <div class="fb-toggle" onclick="toggleFbSidebar()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z" />
+      </svg>
+    </div>
+    <div class="fb-content">
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61585943153642&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+  </div>
+  <div class="fb-overlay" id="fb-overlay" onclick="toggleFbSidebar()"></div>
+
+  <script>
+    function toggleFbSidebar() {
+      const sidebar = document.getElementById('fb-sidebar');
+      const overlay = document.getElementById('fb-overlay');
+      sidebar.classList.toggle('active');
+      overlay.classList.toggle('active');
+
+      // Close other sidebar if open
+      const rightSidebar = document.getElementById('right-sidebar');
+      const rightOverlay = document.getElementById('sidebar-overlay');
+      if (rightSidebar && rightSidebar.classList.contains('active')) {
+        rightSidebar.classList.remove('active');
+        rightOverlay.classList.remove('active');
+        const arrow = document.querySelector('.toggle-arrow');
+        if (arrow) arrow.textContent = '❮';
+      }
+    }
+
+    function openFbSidebar() {
+      const sidebar = document.getElementById('fb-sidebar');
+      if (!sidebar.classList.contains('active')) {
+        toggleFbSidebar();
+      }
+    }
+
+    function closeFbSidebar() {
+      const sidebar = document.getElementById('fb-sidebar');
+      const overlay = document.getElementById('fb-overlay');
+      if (sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
+      }
+    }
+
+
+    // Modify existing toggleSidebar to close FB sidebar if open
+    // We need to ensure this runs after the original toggleSidebar is defined
+    const originalToggle = window.toggleSidebar;
+    window.toggleSidebar = function () {
+      const fbSidebar = document.getElementById('fb-sidebar');
+      const fbOverlay = document.getElementById('fb-overlay');
+      if (fbSidebar && fbSidebar.classList.contains('active')) {
+        fbSidebar.classList.remove('active');
+        fbOverlay.classList.remove('active');
+      }
+      if (originalToggle) originalToggle();
+    }
+  </script>
+  <style>
+    /* Modal Styles */
+    /* Facebook Sidebar Styles */
+    .fb-sidebar {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translate(100%, -50%);
+      width: 340px;
+      background: white;
+      z-index: 10000;
+      box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+      border-radius: 12px 0 0 12px;
+      transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .fb-sidebar.active {
+      transform: translate(0, -50%);
+    }
+
+    .fb-toggle {
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%) translateY(70px);
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 12px 0 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      color: #1877F2;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .fb-toggle:hover {
+      background: #f0f0f0;
+      color: #166fe5;
+    }
+
+    .fb-toggle svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .fb-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(41, 45, 51, 0.4);
+      backdrop-filter: blur(3px);
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+
+    .fb-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .fb-content {
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 400px) {
+      .fb-sidebar {
+        width: 300px;
+      }
+
+      .fb-content iframe {
+        width: 300px !important;
+      }
+    }
+
+    .promo-modal-overlay {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(2px);
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 10000;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .promo-modal-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .promo-modal-box {
+      width: 90%;
+      max-width: 500px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+      transform: scale(0.9);
+      transition: transform 0.3s ease-out;
+      text-align: center;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .promo-modal-overlay.active .promo-modal-box {
+      transform: scale(1);
+    }
+
+    /* Progress Bar REMOVED */
+
+    /* Close button - simplified */
+    .promo-close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: transparent;
+      color: #333;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 10;
+      line-height: 1;
+      padding: 0;
+    }
+
+    .promo-close-btn:hover {
+      color: #000;
+    }
+
+    .promo-modal-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .promo-modal-content {
+      padding: 20px;
+    }
+
+    /* Title - Custom Font */
+    .promo-modal-title {
+      font-family: 'TheanoDidot-Regular1', serif !important;
+      font-size: 32px;
+      font-style: italic;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .promo-modal-text {
+      font-family: 'Ubuntu', sans-serif !important;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 767px) {
+      .promo-modal-box {
+        width: 95%;
+        max-height: 92vh;
+      }
+
+      .promo-modal-image {
+        height: 180px;
+      }
+
+      .promo-modal-title {
+        font-size: 23px !important;
+        margin-top: 5px !important;
+      }
+
+      .promo-modal-content {
+        padding: 10px 15px 30px 15px;
+      }
+
+      .promo-modal-text {
+        font-size: 14px;
+      }
+
+      #promoCtaBtn {
+        padding: 10px 0 !important;
+        font-size: 1rem !important;
+        letter-spacing: 0 !important;
+        width: 250px !important;
+        max-width: none !important;
+        box-sizing: border-box !important;
+        text-transform: none !important;
+      }
+
+      .promo-modal-list {
+        text-align: left !important;
+        padding-left: 20px;
+      }
+    }
+  </style>
+
+  <style>
+    .promo-modal-list {
+      padding-left: 20px;
+      margin: 0 0 15px 0;
+      text-align: left;
+    }
+
+    .promo-modal-list li {
+      font-family: 'Ubuntu', sans-serif !important;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .promo-modal-footer {
+      font-family: 'Ubuntu', sans-serif !important;
+      font-size: 16px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 15px;
+    }
+  </style>
+
+  <div class="promo-modal-overlay" id="promoModal">
+    <div class="promo-modal-box">
+      <button class="promo-close-btn" id="closePromoModal">×</button>
+      <img src="../images/dwa-domki.webp" alt="Brokatowe Domki" class="promo-modal-image">
+      <div class="promo-modal-content">
+        <h3 class="promo-modal-title">PLANEN SIE IHREN TRAUMURLAUB!</h3>
+
+        <ul class="promo-modal-list">
+          <li>Haustiere willkommen</li>
+          <li>Tolle Lage - 800m vom Meer</li>
+          <li>Zugang zum Steingrill</li>
+          <li>Voll ausgestattete Ferienhäuser</li>
+        </ul>
+
+        <p class="promo-modal-footer">
+          Warten Sie nicht, die Termine sind schnell weg - buchen Sie jetzt!
+        </p>
+        <div style="display: flex; justify-content: center;">
+          <a href="#sec-e76e" class="u-btn u-button-style u-btn-1" id="promoCtaBtn"
+            style="background-color: transparent !important; color: #000000 !important; border: 2px solid #000000 !important; border-radius: 10px !important; font-weight: 700 !important; margin: 0 !important; opacity: 1 !important; display: flex !important; justify-content: center !important; align-items: center !important; font-family: 'Ubuntu', sans-serif !important; text-align: center !important;">
+            FORMULAR AUSFÜLLEN
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.getElementById("promoModal");
+      const closeBtn = document.getElementById("closePromoModal");
+      const ctaBtn = document.getElementById("promoCtaBtn");
+
+      // Check for success (form submitted)
+      const params = new URLSearchParams(window.location.search);
+      const isSuccess = params.get("status") === "success" || params.get("sent") === "yes";
+
+      // If NOT success, show welcome modal after 0.5 seconds
+      if (!isSuccess) {
+        setTimeout(() => {
+          modal.classList.add("active");
+        }, 500);
+      }
+
+      // Function to close modal
+      const closeModal = () => {
+        modal.classList.remove("active");
+      };
+
+      // Close on X click
+      closeBtn.addEventListener("click", closeModal);
+
+      // Close on CTA click (smooth scroll handled by anchor)
+      ctaBtn.addEventListener("click", closeModal);
+
+      // Auto-close after 15 seconds
+      setTimeout(() => {
+        closeModal();
+      }, 15000);
+    });
   </script>
 </body>
 
