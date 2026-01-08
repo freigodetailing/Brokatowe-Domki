@@ -1483,6 +1483,7 @@
     margin-bottom: -2px;
   }
 }
+
 /* page-custom-fonts */
 @font-face {
   font-family: 'TheanoDidot-Regular1';
@@ -1490,10 +1491,53 @@
   font-weight: 400;
   src: url(fonts/TheanoDidot-Regular1.ttf);
 }
+
 /* Mobile Menu Separators */
 .u-offcanvas .u-sidenav .u-nav-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Fix header height glitch */
-#sec-6772, #sec-6772 .u-sheet { height: auto !important; min-height: auto !important; }
+#sec-6772,
+#sec-6772 .u-sheet {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+/* Imported from galeria.css to match separator style */
+.section-title {
+  text-align: center !important;
+  font-family: 'TheanoDidot-Regular1', serif !important;
+  width: 100%;
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 90% !important;
+  height: 1px !important;
+  background-color: #000 !important;
+  margin: 20px auto 0 !important;
+}
+
+.h2-margin {
+  margin-top: 40px;
+  margin-bottom: 40px !important;
+}
+
+.u-text-black {
+  color: #333333 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
