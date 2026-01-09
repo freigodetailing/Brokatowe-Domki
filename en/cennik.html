@@ -994,6 +994,11 @@
             .widget-grid {
                 gap: 30px;
             }
+
+            .widget-card {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
         }
     </style>
 </head>
@@ -1489,6 +1494,10 @@
                                 <input type="number" id="booking-children" class="custom-input" value="0" min="0">
                             </div>
                         </div>
+                        <div
+                            style="font-size: 0.75rem; color: #666; text-align: center; margin-bottom: 25px; font-style: italic;">
+                            Max 8 guests total
+                        </div>
                         <div class="info-box">
                             <i class="fas fa-paw paw-icon"></i>
                             <span>Traveling with a pet? Don't forget to mark it on Booking.com</span>
@@ -1515,6 +1524,10 @@
                                 <input type="number" disabled class="custom-input" value="0"
                                     style="background:#fafafa;">
                             </div>
+                        </div>
+                        <div
+                            style="font-size: 0.75rem; color: #666; text-align: center; margin-bottom: 25px; font-style: italic;">
+                            Max 8 guests total
                         </div>
                         <div class="info-box airbnb-style">
                             <i class="fas fa-paw paw-icon"></i>
@@ -2146,6 +2159,36 @@
                 showMonths: 1
             });
             const LINK_BOOKING = "https://www.booking.com/hotel/pl/brokatowe-domki.pl.html";
+
+            // Guest Limit Logic for Booking.com Widget
+            const bookingAdults = document.getElementById('booking-adults');
+            const bookingChildren = document.getElementById('booking-children');
+            const MAX_GUESTS = 8;
+
+            function validateGuests() {
+                let adults = parseInt(bookingAdults.value) || 0;
+                let children = parseInt(bookingChildren.value) || 0;
+
+                if (adults < 1) {
+                    adults = 1;
+                    bookingAdults.value = 1;
+                }
+
+                if (adults + children > MAX_GUESTS) {
+                    if (this === bookingAdults) {
+                        const otherVal = (this === bookingAdults) ? children : adults;
+                        this.value = MAX_GUESTS - otherVal;
+                    } else {
+                        const otherVal = (this === bookingAdults) ? children : adults;
+                        this.value = MAX_GUESTS - otherVal;
+                    }
+                }
+            }
+
+            if (bookingAdults && bookingChildren) {
+                bookingAdults.addEventListener('input', validateGuests);
+                bookingChildren.addEventListener('input', validateGuests);
+            }
             document.getElementById('btn-booking').addEventListener('click', function (e) {
                 e.preventDefault();
                 let url = LINK_BOOKING + "?";
