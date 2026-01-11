@@ -73,9 +73,24 @@
   <script type="application/ld+json">
     {
 		"@context": "http://schema.org",
-		"@type": "Organization",
+		"@type": "VacationRental",
 		"name": "Brokatowe Domki",
-		"url": "https://brokatowedomki.pl/de/"
+		"description": "Ganzjährige, komfortable Ferienhäuser 70m2 in Gąski, 800m vom Meer entfernt. Ideal für Familienurlaub. Wir haben einen Spielplatz und akzeptieren Haustiere.",
+		"url": "https://brokatowedomki.pl/de/",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "ul. Gruszkowa",
+			"addressLocality": "Gąski",
+			"postalCode": "76-034",
+			"addressCountry": "PL"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 54.2379489,
+			"longitude": 15.9005971
+		},
+		"image": "https://brokatowedomki.pl/images/zdjecie-brokatowych-domkow.webp",
+		"priceRange": "250 PLN - 1000 PLN"
 }
    </script>
   <meta content="#6f66ee" name="theme-color" />
@@ -697,7 +712,8 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-2">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-1">
-                          <img alt="Parkplatz-Symbol" src="../images/ikona-auto.webp" />
+                          <img alt="Kostenlose Parkplätze vor Ort bei Ferienhäusern Gąski"
+                            src="../images/ikona-auto.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1">
@@ -712,7 +728,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-3">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-2">
-                          <img alt="Wohnzimmer-Symbol" src="../images/ikona-sofa_1.webp" />
+                          <img alt="Komfortables Wohnzimmer im Ferienhaus" src="../images/ikona-sofa_1.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-3">
@@ -727,7 +743,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-4">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-3">
-                          <img alt="WLAN-Symbol" src="../images/ikona-wifi.webp" />
+                          <img alt="Schnelles WLAN in Ferienhäusern am Meer" src="../images/ikona-wifi.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-5">
@@ -742,7 +758,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-5">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-4">
-                          <img alt="Haustier-Symbol" src="../images/ikona-lapa-psa.webp" />
+                          <img alt="Haustierfreundliche Ferienhäuser in Gąski" src="../images/ikona-lapa-psa.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-7">
@@ -757,7 +773,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-6">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-5">
-                          <img alt="Badezimmer-Symbol" src="../images/ikona-prysznic.webp" />
+                          <img alt="Modernes Badezimmer mit Dusche im Ferienhaus" src="../images/ikona-prysznic.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-9">
@@ -772,7 +788,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-7">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-6">
-                          <img alt="Haus-Symbol" src="../images/ikona-domek.webp" />
+                          <img alt="Geräumiges 70m2 Ferienhaus für 8 Personen" src="../images/ikona-domek.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-11">
@@ -787,7 +803,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-8">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-7">
-                          <img alt="Küche-Symbol" src="../images/ikona-widelec-i-noz.webp" />
+                          <img alt="Voll ausgestattete Küche im Ferienhaus" src="../images/ikona-widelec-i-noz.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-13">
@@ -802,7 +818,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-9">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-8">
-                          <img alt="Garten-Symbol" src="../images/ikona-kwiatek_1.webp" />
+                          <img alt="Grüner Garten bei Brokatowe Domki" src="../images/ikona-kwiatek_1.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-15">
@@ -817,7 +833,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-10">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-9">
-                          <img alt="Grill-Symbol" src="../images/ikona-grill.webp" />
+                          <img alt="Grillplatz im Garten" src="../images/ikona-grill.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-17">
@@ -832,7 +848,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-11">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-10">
-                          <img alt="Spielplatz-Symbol" src="../images/ikona-zjezdzalnia.webp" />
+                          <img alt="Sicherer Spielplatz für Kinder" src="../images/ikona-zjezdzalnia.webp" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-19">
