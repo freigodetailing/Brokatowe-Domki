@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords"
-        content="atrakcyjny cennik wynajmu domków całorocznych nad morzem, koszt pobytu w komfortowym domku dla 8 osób w Gąskach, rezerwacja bezpiecznych wczasów rodzinnych w konkurencyjnej cenie, ile kosztuje tydzień nad morzem w domku o wysokim standardzie, przejrzyste warunki wynajmu i elastyczne terminy poza sezonem">
+        content="atrakcyjny cennik wynajmu domków całorocznych nad morzem, koszt pobytu w komfortowym domku dla 7 osób w Gąskach, rezerwacja bezpiecznych wczasów rodzinnych w konkurencyjnej cenie, ile kosztuje tydzień nad morzem w domku o wysokim standardzie, przejrzyste warunki wynajmu i elastyczne terminy poza sezonem">
     <meta name="description"
         content="Poznaj atrakcyjne ceny na całoroczne domki 70m2 Gąski. Zarezerwuj bezpieczne wczasy rodzinne z swoim pupilem i ciesz się komfortowymi noclegami 800m od plaży.">
     <title>Brokatowe Domki: Cennik wynajmu i zasady rezerwacji pobytu</title>
@@ -1496,7 +1496,7 @@
                         </div>
                         <div
                             style="font-size: 0.75rem; color: #666; text-align: center; margin-bottom: 25px; font-style: italic;">
-                            Maksymalnie 8 osób łącznie
+                            Maksymalnie 7 osób łącznie
                         </div>
                         <div class="info-box">
                             <i class="fas fa-paw paw-icon"></i>
@@ -1527,7 +1527,7 @@
                         </div>
                         <div
                             style="font-size: 0.75rem; color: #666; text-align: center; margin-bottom: 25px; font-style: italic;">
-                            Maksymalnie 8 osób łącznie
+                            Maksymalnie 7 osób łącznie
                         </div>
                         <div class="info-box airbnb-style">
                             <i class="fas fa-paw paw-icon"></i>
@@ -1639,10 +1639,10 @@
                                 <input type="hidden" id="full-phone" name="Telefon">
                             </div>
                             <div class="input-group guest-group">
-                                <label class="static-label">Liczba osób (max 8)*</label>
+                                <label class="static-label">Liczba osób (max 7)*</label>
                                 <div class="guest-counter">
                                     <button type="button" class="counter-btn" id="guest-minus">-</button>
-                                    <input id="guests" max="8" min="1" name="Liczba osób" value="4" readonly required=""
+                                    <input id="guests" max="7" min="1" name="Liczba osób" value="4" readonly required=""
                                         type="number" />
                                     <button type="button" class="counter-btn" id="guest-plus">+</button>
                                 </div>
@@ -2006,7 +2006,7 @@
                         if (btnPlus && btnMinus && guestsInput) {
                             btnPlus.addEventListener('click', () => {
                                 let val = parseInt(guestsInput.value) || 0;
-                                if (val < 8) guestsInput.value = val + 1;
+                                if (val < 7) guestsInput.value = val + 1;
                             });
 
                             btnMinus.addEventListener('click', () => {
@@ -2164,7 +2164,7 @@
             // Guest Limit Logic for Booking.com Widget
             const bookingAdults = document.getElementById('booking-adults');
             const bookingChildren = document.getElementById('booking-children');
-            const MAX_GUESTS = 8;
+            const MAX_GUESTS = 7;
 
             function validateGuests() {
                 let adults = parseInt(bookingAdults.value) || 0;

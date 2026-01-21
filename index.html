@@ -49,8 +49,7 @@
   </script>
   <script class="u-script" defer="" src="nicepage.js" type="text/javascript">
   </script>
-  <script class="u-script" defer="" src="snow.js" type="text/javascript">
-  </script>
+
   <meta content="Brokatowe Domki Gąski" name="author" />
   <meta content="PL-ZP" name="geo.region" />
   <meta content="Gąski" name="geo.placename" />
@@ -783,7 +782,7 @@
                     <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-7">
                         <span class="u-align-left u-file-icon u-icon u-text-black u-icon-6">
-                          <img src="images/ikona-domek.webp" alt="Przestronny domek 70m2 dla 8 osób" />
+                          <img src="images/ikona-domek.webp" alt="Przestronny domek 70m2 dla 7 osób" />
                         </span>
                         <h5
                           class="u-custom-font u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-11">
@@ -791,7 +790,7 @@
                         </h5>
                         <p
                           class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-custom-font u-font-montserrat u-text u-text-12">
-                          Przeznaczony dla 8 osób max.
+                          Przeznaczony dla 7 osób max.
                         </p>
                       </div>
                     </div>
@@ -1440,10 +1439,10 @@
             </div>
 
             <div class="input-group guest-group">
-              <label class="static-label">Liczba osób (max 8)*</label>
+              <label class="static-label">Liczba osób (max 7)*</label>
               <div class="guest-counter">
                 <button type="button" class="counter-btn" id="guest-minus">-</button>
-                <input id="guests" max="8" min="1" name="Liczba osób" value="4" readonly required="" type="number" />
+                <input id="guests" max="7" min="1" name="Liczba osób" value="4" readonly required="" type="number" />
                 <button type="button" class="counter-btn" id="guest-plus">+</button>
               </div>
             </div>
@@ -1813,7 +1812,7 @@
 
           btnPlus.addEventListener('click', () => {
             let val = parseInt(guestsInput.value) || 0;
-            if (val < 8) guestsInput.value = val + 1;
+            if (val < 7) guestsInput.value = val + 1;
           });
 
           btnMinus.addEventListener('click', () => {
@@ -2389,7 +2388,7 @@
   }
 
   .promo-modal-content {
-    padding: 20px;
+    padding: 40px;
   }
 
   /* Title - Custom Font */
@@ -2476,7 +2475,7 @@
 <div class="promo-modal-overlay" id="promoModal">
   <div class="promo-modal-box">
     <button class="promo-close-btn" id="closePromoModal">×</button>
-    <img src="images/dwa-domki.webp" alt="Brokatowe Domki" class="promo-modal-image">
+    <img src="images/Napis-Gaski.webp" alt="Brokatowe Domki" class="promo-modal-image">
     <div class="promo-modal-content">
       <h3 class="promo-modal-title">Zaplanuj swój wymarzony pobyt!</h3>
 
@@ -2511,10 +2510,13 @@
     const params = new URLSearchParams(window.location.search);
     const isSuccess = params.get("status") === "success" || params.get("sent") === "yes";
 
-    // Jeśli NIE ma sukcesu, pokaż modal powitalny po 0.5 sekundy
-    if (!isSuccess) {
+    // Jeśli NIE ma sukcesu i użytkownik nie widział jeszcze modala, pokaż go
+    const hasSeenPromo = localStorage.getItem("hasSeenPromo");
+
+    if (!isSuccess && !hasSeenPromo) {
       setTimeout(() => {
         promoModal.classList.add("active");
+        localStorage.setItem("hasSeenPromo", "true");
       }, 500);
     }
 
